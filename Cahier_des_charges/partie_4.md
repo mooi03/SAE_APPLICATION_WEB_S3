@@ -1,3 +1,5 @@
+## I./Chapitre 4 - La technologie employée 
+
 Pour le développement de notre application web, nous avons étudié les contraintes du client. L'application sera développée sur le système d’exploitation Windows en utilisant le langage de programmation PHP, conformément aux exigences du client.
 
 Pour la base de données, nous utiliserons MySQL, également conforme aux préférences du client. Il est important de dire que la modification et la consultation de la base de données ne sera possible que via l'application. En ce qui concerne les capacités de la base de données, elles serra pas excessivement grandes, car le système n'aura pas besoin de stocker un volume important de données donc MySQL est une bonne option. Pour aider à visualiser la base de données nous utiliserons PHPMyAdmin.
