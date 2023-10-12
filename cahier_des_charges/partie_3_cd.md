@@ -1,0 +1,3 @@
+### III. Pré-requis
+
+Les compétences développement web (PHP, MySQL), language web telles que HTML, CSS, JavaScript, et des compétences en sécurité informatique. Du point de vue des ressources, le projet nécessite un Raspberry Pi 4 (RPi4) avec un système d'exploitation, un serveur web (par exemple Apache), et un serveur de base de données (MySQL) et il faudrait aussi une carte sd pour y mettre l’application web.
