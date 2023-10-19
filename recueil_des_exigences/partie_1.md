@@ -1,4 +1,4 @@
-## I./Chapitre 1 - Objectif et portée 
+## I./Chapitre 1 - Objectif et portée
 
 ### Les objectifs généraux :
 
@@ -7,7 +7,7 @@ concevoir une application web qui donnera la possibilité aux utilisateurs de l�
 
 ### les acteurs du système :
 
-Le projet implique plusieurs intervenants, Voici la liste des intervenants et leurs responsabilités 
+Le projet implique plusieurs intervenants, Voici la liste des intervenants et leurs responsabilités
 1. **L'Administrateur Système :**
     - L’administrateur système peut consulter via l’application web les différents journaux d'activité détaillés plus tôt.
 2. **L'Administrateur Web :**
@@ -23,7 +23,10 @@ Le projet implique plusieurs intervenants, Voici la liste des intervenants et le
     - Ils peuvent consulter les 10 dernières demandes.
 
 ### la portée de l’application :
+pour la version final :
 
 L’application prendra en compte la création des créations de tickets, la gestion des tickets, la prise en charge des tickets, l’enregistrement des actions dans des journaux, <br> la création de nouveaux utilisateurs et techniciens. Mais ne prendras pas en compte la correction des problèmes signalés et les mises à jour.
 
+pour la version V0.1 :
 
+L'application ne serra que des pages html avec du css il n'y auras pas de php donc pas de gestion d'utilisateurs et de gestion de tickets.
