@@ -379,3 +379,21 @@ Les connexions infructueuses seront notifiées dans le journal d’activité
 4. Attribution des ressources associées
 5. Déconnexion de son compte
 ****
+# Cas d'utilisation 19: Implémentation de la table
+
+**Nom :** Implementaion de la table  
+**Contexte d'utilisation :** la plateforme devra transcrire aux utilisateurs le code html de notre plateforme    
+**Portée :** Boîte noire  
+**Niveau :** Sous-fonction  
+**Acteur principal :** utilisateur    
+**Intervenants et intérêts :**
+- utilisateur: avoir accès aux spécifications de la plateforme   
+  **Précondition :** Avoir accès à la plateforme   
+  **Garantie en cas de succès :** bon déroulement de la demande du client allant de l’interprétation du code vers la visualisation de celui-ci par le client    
+  **Déclencheur :** Demande d’un utilisateur
+
+## Scénario nominal :
+
+1. saisir la demande  
+2. exécuter du code  
+3. interprétation du code par le navigateur
