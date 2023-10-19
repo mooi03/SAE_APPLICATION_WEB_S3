@@ -398,4 +398,4 @@ Les connexions infructueuses seront notifiées dans le journal d’activité
 2. exécuter du code  
 3. interprétation du code par le navigateur
 ****
-Concernant le livrable V0_1, nous utilisons que le cas d'utilisation 19 avec la maquettze
+Concernant le livrable V0_1, nous utilisons que le cas d'utilisation 19 avec la maquette
