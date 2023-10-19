@@ -1,4 +1,6 @@
-## I./Chapitre 4 - La technologie employée
+## IV./Chapitre 4 - La technologie employée
+
+pour l'application final :
 
 Pour le développement de notre application web, nous avons étudié les contraintes du client. L'application sera développée sur le système d’exploitation Windows en utilisant le langage de programmation PHP, conformément aux exigences du client.
 
@@ -11,3 +13,7 @@ l’application doit être capable de communiquer avec la base c'est-à-dire fai
 La partie html de l’application doit être aux normes W3C pour qu’elle soit utilisable par des personnes en situation de handicape. l’application web doit aussi pouvoir être compatible avec windows et linux c'est-à-dire pouvoir tourner à la fois sur xampp et sur lamp. Le système n'aura pas besoin de s’intégrer à d'autres systèmes déjà existants.
 
 Nous allons aussi utiliser du CSS pour rendre la page plus esthétique. nous ferons un CSS externe nous avons détaillé la charte graphique de la page html dans le dossier consacré à la communication.
+
+pour l'application V0.1 :
+
+l'application ne comporteras que la partie html, cs avec et normes W3C. Il n'y auras pas le partie aves la carte sd et le serveure raspberry pi 4  
