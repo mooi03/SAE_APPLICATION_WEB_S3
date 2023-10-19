@@ -1,0 +1,47 @@
+#logo_uvsq{
+    position: relative;
+}
+#logo{
+    position: relative;
+    left:1350px;
+}
+header{
+}
+.tableau_co{
+    border: 2px solid #c800ff;
+    border-collapse: collapse;
+    padding: 10px;
+    font-size: 25px;
+}
+#table_co{
+    position: relative;
+    left:400px;
+    top: 100px;
+    height: 400px;
+    width: 1000px;
+
+}
+.liens_connexion{
+    font-family: Arial;
+    font-size: 60px;
+    position: relative;
+    top: 50px;
+}
+#lien_co{
+    color: #c800ff;
+    text-decoration: None;
+    position: relative;
+    left: 450px;
+}
+#lien_insc{
+    color: #ff0000;
+    text-decoration: None;
+    position: relative;
+    left: 700px;
+}
+#lien_insc:hover{
+    color: #ff8800;
+}
+#lien_co:hover{
+    color: #ff8800;
+}
