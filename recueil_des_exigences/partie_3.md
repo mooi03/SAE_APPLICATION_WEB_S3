@@ -379,9 +379,9 @@ Les connexions infructueuses seront notifiées dans le journal d’activité
 4. Attribution des ressources associées
 5. Déconnexion de son compte
 ****
-# Cas d'utilisation 19: Implémentation de la table
+# Cas d'utilisation 19: Implémentation de la page
 
-**Nom :** Implementaion de la table  
+**Nom :** Implementaion de la page  
 **Contexte d'utilisation :** la plateforme devra transcrire aux utilisateurs le code html de notre plateforme    
 **Portée :** Boîte noire  
 **Niveau :** Sous-fonction  
@@ -397,3 +397,5 @@ Les connexions infructueuses seront notifiées dans le journal d’activité
 1. saisir la demande  
 2. exécuter du code  
 3. interprétation du code par le navigateur
+****
+Concernant le livrable V0_1, nous utilisons que le cas d'utilisation 19 avec la maquettze
