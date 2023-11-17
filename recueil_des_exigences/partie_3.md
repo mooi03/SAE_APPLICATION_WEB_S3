@@ -1,5 +1,5 @@
 ****
-# Cas d'utilisation 1: Recueillir les demandes
+## Cas d'utilisation 1: Recueillir les demandes
 
 **Nom :** Recueillir les demandes  
 **Contexte d'utilisation :** La plateforme devra recueillir les demandes disponibles par les utilisateurs  
@@ -11,12 +11,12 @@
 **Garantie en cas de succès :** Bon déroulement de la demande du client allant de la création du ticket ou du compte  
 **Déclencheur :** Demande d’un client
 
-## Scénario nominal :
+### Scénario nominal :
 1. Saisir la demande
 2. Exécuter la demande
 3. Enregistrer la demande dans le journal d’activité
 ****
-# Cas d'utilisation 2: Gérer les tickets
+## Cas d'utilisation 2: Gérer les tickets
 
 **Nom :** Gérer les tickets  
 **Contexte d'utilisation :** La plateforme devra prendre en charge les tickets inscrits dans le journal d’activité  
@@ -31,13 +31,13 @@
   **Garantie minimale :** Bonne confidentialité du ticket  
   **Déclencheur :** Demande d’un client avec la création d’un ticket
 
-## Scénario nominal :
+### Scénario nominal :
 
 1. Saisir la demande
 2. Ajouter le ticket au journal d’activité
 3. Traiter le ticket
 ****
-# Cas d'utilisation 3: Accueillir les utilisateurs
+## Cas d'utilisation 3: Accueillir les utilisateurs
 
 **Nom :** Accueillir les utilisateurs  
 **Contexte d'utilisation :** La plateforme devra prendre en charge tout type d’utilisateur ayant accès à la plateforme  
@@ -51,13 +51,13 @@
   **Garantie en cas de succès :** Bon déroulement allant de la création d’un compte utilisateur vers une visite ou d’une authentification d’un technicien ou d’un administrateur  
   **Déclencheur :** Utilisation de la plateforme par un utilisateur, un visiteur, un administrateur ou un technicien
 
-## Scénario nominal :
+### Scénario nominal :
 
 1. Ajouter la visite dans le journal d’activité
 2. Saisir la création d’un compte ou non
 3. Attribution des droits associés ou non
 ****
-# Cas d'utilisation 4: Gérer les comptes
+## Cas d'utilisation 4: Gérer les comptes
 
 **Nom :** Gérer les comptes  
 **Contexte d'utilisation :** La plateforme devra gérer toutes les tâches propres à chaque utilisateur  
@@ -69,7 +69,7 @@
 **Garantie en cas de succès :** Bon déroulement allant de l’inscription d’un utilisateur vers l’attribution de l’entièreté de ses droits  
 **Déclencheur :** Identification ou création d’un compte par un utilisateur
 
-## Scénario nominal :
+### Scénario nominal :
 
 1. Création ou identification d’un compte par un utilisateur
 2. Attribution des droits en fonction de l’utilisateur
@@ -77,7 +77,7 @@
 
 **Liste des variantes :** La demande peut être un ticket ou un nouvel utilisateur
 ****
-# Cas d'utilisation 5: Modifier les tickets
+## Cas d'utilisation 5: Modifier les tickets
 
 **Nom :** Modifier les tickets  
 **Contexte d'utilisation :** La plateforme devra permettre au technicien et à l’administrateur de modifier les tickets  
@@ -92,13 +92,13 @@
   **Garantie en cas de succès :** Bon déroulement de la demande du client allant de la modification du ticket à l’ajout de celui-ci dans le journal d’activité  
   **Déclencheur :** Demande d’un client ou mauvais jugement du client concernant l’urgence du ticket
 
-## Scénario nominal :
+### Scénario nominal :
 
 1. Saisir la demande
 2. Exécuter la modification
 3. Enregistrer la modification dans le journal d’activité
 ****
-# Cas d'utilisation 6: Modifier le niveau d’urgence du ticket
+## Cas d'utilisation 6: Modifier le niveau d’urgence du ticket
 
 **Nom :** Modifier le niveau d’urgence du ticket  
 **Contexte d'utilisation :** La plateforme devra permettre à l’administrateur de modifier le niveau d’urgence du ticket  
@@ -112,13 +112,13 @@
   **Garantie en cas de succès :** Bon déroulement de la demande du client allant de la création du ticket vers la modification de son niveau d’urgence  
   **Déclencheur :** Demande d’un client ou mauvais jugement du client concernant l’urgence du ticket
 
-## Scénario nominal :
+### Scénario nominal :
 
 1. Saisir la demande
 2. Exécuter la demande
 3. Enregistrer la demande dans le journal d’activité
 ****
-# Cas d'utilisation 7: Modifier l'état du ticket
+## Cas d'utilisation 7: Modifier l'état du ticket
 
 **Nom :** Modifier l'état du ticket  
 **Contexte d'utilisation :** La plateforme devra permettre aux techniciens et à l’administrateur de modifier le niveau d’urgence du ticket  
@@ -132,13 +132,13 @@
   **Garantie en cas de succès :** Bon déroulement de la demande du client allant de la création du ticket vers la modification de son état  
   **Déclencheur :** Le ticket est soit en traitement ou terminé
 
-## Scénario nominal :
+### Scénario nominal :
 
 1. Saisir la modification
 2. Exécuter la modification
 3. Enregistrer la modification dans le journal d’activité
 ****
-# Cas d'utilisation 8: Modifier le libellé du ticket
+## Cas d'utilisation 8: Modifier le libellé du ticket
 
 **Nom :** Modifier le libellé du ticket  
 **Contexte d'utilisation :** La plateforme devra permettre à l’administrateur de modifier le libellé du ticket  
@@ -152,13 +152,13 @@
   **Garantie en cas de succès :** Bon déroulement de la demande du client allant de la modification du libellé vers la résolution du problème lié au libellé  
   **Déclencheur :** Demande d’un client
 
-## Scénario nominal :
+### Scénario nominal :
 
 1. Saisir la modification
 2. Exécuter la modification
 3. Enregistrer la modification dans le journal d’activité
 ****
-# Cas d'utilisation 9: Créer les tickets
+## Cas d'utilisation 9: Créer les tickets
 
 **Nom :** Créer les tickets  
 **Contexte d'utilisation :** La plateforme devra créer les tickets en fonction des critères définis par le client  
@@ -172,18 +172,18 @@
   **Garantie en cas de succès :** Bon déroulement de la demande du client allant de la création du ticket vers la résolution du problème technique  
   **Déclencheur :** Problème technique au niveau de l’utilisateur inscrit
 
-## Scénario nominal :
+### Scénario nominal :
 
 1. Saisir la demande de création de ticket
 2. Exécuter la demande dans le journal d’activités
 3. Vérification de l’état d’urgence inscrit par l’utilisateur
 4. Résolution du problème technique
 
-## Extension :
+### Extension :
 
 - Le ticket qui n’a pas reçu de bonne vérification de son état d’urgence se verra modifié par l’administrateur son niveau d’urgence
 ****
-# Cas d'utilisation 10: Créer les techniciens
+## Cas d'utilisation 10: Créer les techniciens
 
 **Nom :** Créer les techniciens  
 **Contexte d'utilisation :** La plateforme devra permettre de créer de nouveaux profils techniciens en cas de besoin  
@@ -197,14 +197,14 @@
   **Garantie en cas de succès :** Bon déroulement allant de la création du technicien jusqu’à sa mise en activité  
   **Déclencheur :** Besoin au sein du fonctionnement de la plateforme
 
-## Scénario nominal :
+### Scénario nominal :
 
 1. Saisir le besoin
 2. Exécuter le besoin
 3. Créer le compte et associer les droits
 4. Enregistrer la création du compte dans le journal d’activité
 ****
-# Cas d'utilisation 11: Modifier mot de passe
+## Cas d'utilisation 11: Modifier mot de passe
 
 **Nom :** Modifier mot de passe  
 **Contexte d'utilisation :** La plateforme permettra aux utilisateurs inscrits de pouvoir modifier leur mot de passe  
@@ -217,18 +217,18 @@
   **Garantie en cas de succès :** Bon déroulement de la modification de son mot de passe  
   **Déclencheur :** Action de l’utilisateur inscrit
 
-## Scénario nominal :
+### Scénario nominal :
 
 1. Saisir la modification
 2. Exécuter la modification
 3. Modifier le champ mot de passe de l’utilisateur dans la base de données
 4. Attribution du nouveau mot de passe de l’utilisateur dans le système
 
-## Extension :
+### Extension :
 
 - Cette modification ne sera pas inscrite dans le journal des activités
 ****
-# Cas d'utilisation 12: Inscription des utilisateurs
+## Cas d'utilisation 12: Inscription des utilisateurs
 
 **Nom :** Inscription des utilisateurs  
 **Contexte d'utilisation :** La plateforme devra recueillir les demandes disponibles par les utilisateurs  
@@ -241,18 +241,18 @@
   **Garantie en cas de succès :** Bon déroulement de la demande du client allant vers la création d’un compte utilisateur  
   **Déclencheur :** Demande d’un visiteur
 
-## Scénario nominal :
+### Scénario nominal :
 
 1. Saisir la demande d’inscription
 2. Exécuter la demande d'inscription
 3. Enregistrer la demande dans le journal d’activité
 4. Donner les droits associés à l’utilisateur
 
-## Informations connexes :
+### Informations connexes :
 
 Informations complémentaires.
 ****
-# Cas d'utilisation 13: Création des utilisateurs
+## Cas d'utilisation 13: Création des utilisateurs
 
 **Nom :** Création des utilisateurs  
 **Contexte d'utilisation :** La plateforme devra permettre au visiteur de créer un compte utilisateur s'ils le souhaitent  
@@ -265,14 +265,14 @@ Informations complémentaires.
   **Garantie en cas de succès :** Bon déroulement de la demande du client allant vers la création d’un compte utilisateur  
   **Déclencheur :** Demande d’un visiteur
 
-## Scénario nominal :
+### Scénario nominal :
 
 1. Saisir la demande d’inscription
 2. Création du compte avec les droits utilisateurs
 3. Enregistrer la demande dans le journal d’activité
 4. Donner les droits associés à l’utilisateur
 ****
-# Cas d'utilisation 14: Consulter les tickets
+## Cas d'utilisation 14: Consulter les tickets
 
 **Nom :** Consulter les tickets  
 **Contexte d'utilisation :** La plateforme devra permettre aux techniciens et à l’administrateur web d'accéder à l’entièreté des tickets  
@@ -285,13 +285,13 @@ Informations complémentaires.
   **Garantie en cas de succès :** Bon déroulement de la consultation du ticket avec une bonne sécurité  
   **Déclencheur :** Demande d’un client ou action nécessaire des techniciens ou de l’administrateur web
 
-## Scénario nominal :
+### Scénario nominal :
 
 1. Accéder au journal d’activité
 2. Consulter les informations du ticket
 3. Enregistrer la consultation dans le journal d’activité
 ****
-# Cas d'utilisation 15: Attribution des tickets
+## Cas d'utilisation 15: Attribution des tickets
 
 **Nom :** Attribution des tickets  
 **Contexte d'utilisation :** La plateforme devra attribuer les tickets aux techniciens disponibles  
@@ -304,13 +304,13 @@ Informations complémentaires.
   **Garantie en cas de succès :** Bon déroulement de la demande du client allant de la création du ticket jusqu’à la réalisation de celui-ci  
   **Déclencheur :** Techniciens disponibles
 
-## Scénario nominal :
+### Scénario nominal :
 
 1. Connexion du technicien
 2. Accès au journal d’activité par le technicien
 3. Attribution du ticket par le technicien
 ****
-# Cas d'utilisation 16: Consulter le journal d’activité
+## Cas d'utilisation 16: Consulter le journal d’activité
 
 **Nom :** Consulter le journal d’activité  
 **Contexte d'utilisation :** La plateforme devra permettre à l’administrateur système d'accéder au journal d’activité  
@@ -323,17 +323,17 @@ Informations complémentaires.
   **Garantie en cas de succès :** Bon déroulement du cas d'utilisation allant du besoin d’accéder au journal vers sa réussite  
   **Déclencheur :** Besoin de l’administrateur système
 
-## Scénario nominal :
+### Scénario nominal :
 
 1. Demande de l’administrateur
 2. Connexion de l’administrateur
 3. Exécuter la demande
 
-## Extension :
+### Extension :
 
 - L’administrateur système accède au journal d’activité par le biais de l’administrateur web
 ****
-# Cas d'utilisation 17: Connexion des utilisateurs
+## Cas d'utilisation 17: Connexion des utilisateurs
 
 **Nom :** Connexion des utilisateurs  
 **Contexte d'utilisation :** La plateforme devra permettre aux utilisateurs de se connecter et de se reconnecter sur leur même compte  
@@ -346,7 +346,7 @@ Informations complémentaires.
   **Garantie en cas de succès :** Bon déroulement de la demande de l’utilisateur allant de la connexion vers l'attribution des droits  
   **Déclencheur :** Demande d’un utilisateur
 
-## Scénario nominal :
+### Scénario nominal :
 
 1. Créer un compte
 2. Se déconnecter de son compte
@@ -354,11 +354,11 @@ Informations complémentaires.
 4. Attribution des droits
 5. Attribution de ses ressources
 
-## Informations connexes :
+### Informations connexes :
 
 Les connexions infructueuses seront notifiées dans le journal d’activité
 ****
-# Cas d'utilisation 18: Déconnexion des utilisateurs
+## Cas d'utilisation 18: Déconnexion des utilisateurs
 
 **Nom :** Déconnexion des utilisateurs  
 **Contexte d'utilisation :** La plateforme devra permettre aux utilisateurs de se déconnecter sur leur même compte  
@@ -371,7 +371,7 @@ Les connexions infructueuses seront notifiées dans le journal d’activité
   **Garantie en cas de succès :** Bon déroulement de la demande de l’utilisateur allant de la demande vers la déconnexion complète et vérifiable  
   **Déclencheur :** Demande d’un utilisateur
 
-## Scénario nominal :
+### Scénario nominal :
 
 1. Créer un compte
 2. Connexion à son compte
@@ -379,10 +379,10 @@ Les connexions infructueuses seront notifiées dans le journal d’activité
 4. Attribution des ressources associées
 5. Déconnexion de son compte
 ****
-# Cas d'utilisation 19: Implémentation de la page
+## Cas d'utilisation 19: Implémentation de la page
 
 **Nom :** Implementaion de la page  
-**Contexte d'utilisation :** la plateforme devra transcrire aux utilisateurs le code html de notre plateforme    
+**Contexte d'utilisation :** la plateforme devra transemètre aux utilisateurs le code html de notre application   
 **Portée :** Boîte noire  
 **Niveau :** Sous-fonction  
 **Acteur principal :** utilisateur    
@@ -392,10 +392,16 @@ Les connexions infructueuses seront notifiées dans le journal d’activité
   **Garantie en cas de succès :** bon déroulement de la demande du client allant de l’interprétation du code vers la visualisation de celui-ci par le client    
   **Déclencheur :** Demande d’un utilisateur
 
-## Scénario nominal :
+### Scénario nominal :
 
-1. saisir la demande  
-2. exécuter du code  
+1. l'utilisateur mes l'urt du site dans le navigateur 
+2. le serveur apache envoie le code 
 3. interprétation du code par le navigateur
 ****
-Concernant le livrable V0_1, nous utilisons que le cas d'utilisation 19 avec la maquette
+#### *Pour la version V0.1 :*
+
+Concernant le livrable V0_1 elle n'implémentera que le cas d'utilisation 19 qui est l'Implémentation de la page
+
+#### *Pour la version V0.2 :*
+
+Concernant le livrable V0_2 l'application implémentera la cas d'utilisation 19,18,17,13 et 12 bien que ce soit un peu la même

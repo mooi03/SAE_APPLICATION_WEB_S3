@@ -1,4 +1,4 @@
-## VI./Chapitre 6 - Recours humain, questions juridiques, politiques, organistionnelles.
+## I./Chapitre 6 - Recours humain, questions juridiques, politiques, organistionnelles.
 
 ### a. Recours humain au fonctionnement du système :
 
