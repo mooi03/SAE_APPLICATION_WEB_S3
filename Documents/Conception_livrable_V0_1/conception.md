@@ -5,8 +5,8 @@ La figure **conception vue modulaire** représente une vue modulaire du système
 - On crée le composant **navigateur** en tant qu'abstraction du navigateur que l’on utilise.
 <img src="navigateuruml.PNG">
 ****
-- On crée le composant **page HTML** abstraction du package qui contient toutes les pages HTML de notre maquette
-<img src="pagehtmluml.PNG">
+- On crée le composant **page HTML** abstraction du package qui contient toutes les pages HTML de notre maquette (il contient les pages html et leurs liens)
+<img src="pagehtmlcomplet.PNG">
 ****
 - On crée une **dépendance** du package navigateur vers le package qui contient toutes les pages html
 <img src="dependancet1t2.PNG">
