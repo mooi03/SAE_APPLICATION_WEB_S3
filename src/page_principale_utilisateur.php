@@ -71,6 +71,7 @@ include 'restriction.php'
             </div>
             <div class="stat stat_49">
                 <div class="menu_déroulant">
+                    <?php include 'tab_utilisateur.php'?>
             </div>
             </div>
         </div>

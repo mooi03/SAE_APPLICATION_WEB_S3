@@ -325,18 +325,20 @@ body{
 }
 .confirmation_sans_marge {
     background-color: #6dfaaa;
-    border-radius: 12px;
+    border-radius: 6px;
     border: 0;
     box-sizing: border-box;
     border: solid black;
     color: #000000;
     cursor: pointer;
     font-size: 18px;
-    height: 50px;
-    margin-top: 150px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 30px;
+    margin-left: 37%;
     text-align: center;
-    width: 30%;
-    margin-left: 65%;
+    justify-self: center;
+    width: 25%;
 }
 .confirmation:active {
     background-color: #489b71;
@@ -347,15 +349,7 @@ body{
 #bouton_haut{
 
 }
-#popup{
-    display: none;
-    position: fixed;
-    padding: 40px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #f5b8fc;
-}
+
 .num_ticket{
     padding: 10px 20px;
     background-color: #4CAF50; /* Couleur de fond */
@@ -368,4 +362,29 @@ body{
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 5px;
+}
+#popup{
+    display: none;
+    position: fixed;
+    padding: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f5b8fc;
+    border: solid black 3px;
+    border-radius: 30px 30px 30px 30px;
+    height: 450px;
+    width: 550px;
+}
+.déroulant_popup{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background-color: white;
+    height: 95%;
+    width: 100%;
+    overflow: scroll;
+    scrollbar-color: red orange;
+    scrollbar-width: thin;
 }

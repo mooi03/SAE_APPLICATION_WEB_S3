@@ -39,6 +39,9 @@ seuls les administrateurs peuvent modifier ou supprimer paramettre et voir les t
 **Archivage Automatique** : Les tickets résolus seront automatiquement enregeistré dans un journal de l'admin systême
 la clarté de l'historique.
 
+**Journal d'activiter** : il y auras plusieurs journeaux d'activiter qui pourrons êtres consulter par l'adim res et il 
+rensegnerons les tickets fermer, ce ouvert , et les erreur de connexion.
+
 ## e. Utilisation et utilisabilité :
 
 ### Expérience Utilisateur

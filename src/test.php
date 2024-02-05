@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <button onclick="afficherPopup()">Afficher la Popup</button>
 
 <div id="popup" class="stat stat_48 pour_form">
-    <form method="post" class="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+    <form method="post" class="form">
 
     <label for="libelle">Libellé :</label>
     <input type="text" class="input" name="libelle" id="libelle" required>
