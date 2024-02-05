@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <form method="post" class="form">
 
     <label for="libelle">Libellé :</label>
-    <input type="text" class="input" name="libelle" id="libelle" required>
+    <input type="text" class="input" name="libelle" id="libelle">
 
     <button type="submit" class="confirmation_sans_marge">Soumettre</button>
     </form>

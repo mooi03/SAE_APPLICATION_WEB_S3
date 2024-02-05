@@ -36,7 +36,7 @@ echo '<table>
     <div class="déroulant_popup">
     <p id="libelle"></p>
 </div>
-    <button onclick="fermerPopup()" class="confirmation_sans_marge">Fermer</button>
+    <button onclick="fermerPopup()" class="confirmation_sans_marge" style="background-color: crimson ">Fermer</button>
 </div>
 <script type="text/javascript" src="pour_tab.js"></script>';
 
