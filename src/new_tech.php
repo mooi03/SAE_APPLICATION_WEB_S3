@@ -11,7 +11,7 @@ include 'restriction_2.php'
 <body>
 <div class="droite">
   <div class="haut">
-    <a href="decon.php" class="lien_bouton">déconnexion</a>
+    <a href="decon.php" class="lien_bouton" id="deco">déconnexion</a>
     <div id="bouton_haut">
       <a href=""><img src="logo.PNG" class="img_bouton"></a>
       <a href=""><img src="logo.PNG" class="img_bouton"></a>

@@ -38,14 +38,14 @@ if ($resultat) {
 
     echo '</table>';
     echo '
-<div id="popup" style="display: none">
+<div id="popup" style="display: none; height: 450px">
 <form method="post" class="form" action="">
 <div class="input_div début" style="margin-bottom: 30px; height: 200px">
     <textarea class="input" name="libelle" id="libelle"> </textarea>
     <button type="submit" class="confirmation_sans_marge">modifier</button>
     </div>
     </form>
-    <button onclick="fermerPopup()" class="confirmation_sans_marge" style="background-color: crimson ">Fermer</button>
+    <button onclick="fermerPopup()" class="confirmation_sans_marge" style="background-color: crimson ">Fermers</button>
 </div>
 <div id="popup_urgence" style="display: none">
 <form method="post" class="form form_urgence" action="">

@@ -60,17 +60,13 @@ include 'restriction.php'
                 </div>
                 <div class="stat stat_49 colum">
                     <div class="stat stat_49 colum">
-                        <div class="menu_déroulant">
-                        </div>
                     </div>
                     <div class="stat stat_49 colum">
-                        <div class="menu_déroulant">
-                        </div>
                     </div>
                 </div>
             </div>
-            <div class="stat stat_49">
-                <div class="menu_déroulant">
+            <div class="stat stat_49 centre">
+                <div class="menu_déroulant" style="height: 550px;">
                     <?php include 'tab_utilisateur.php'?>
             </div>
             </div>

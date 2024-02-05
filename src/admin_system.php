@@ -31,19 +31,16 @@ include 'restriction_2.php'
     </div>
     <div class="bas">
         <div class="stat flex_row_79">
-            <div class="menu_déroulant">
+            <div class="menu_déroulant" style="height: 650px;">
                 <?php include 'tab_admin_system.php'?>
             </div>
         </div>
         <div class="flex_row_19">
             <div class="stat stat_32">
-                <div class="menu_déroulant"></div>
             </div>
             <div class="stat stat_32">
-                <div class="menu_déroulant"></div>
             </div>
             <div class="stat stat_32">
-                <div class="menu_déroulant"></div>
             </div>
         </div>
     </div>

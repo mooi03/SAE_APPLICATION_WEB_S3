@@ -32,19 +32,19 @@ include 'restriction.php'
     <div class="bas centre">
         <div class="stat stat_100 pour_form mdp_uu">
             <div class="titre"><p>Nouveau mdp</p></div>
-            <form action="" class="form">
+            <form action="changement.php" class="form" method="post">
                 <div class="input_div début_mdp">
-                    <input id="ancien_mdp" class="input" type="text" placeholder=" " />
+                    <input id="ancien_mdp" name="ancien_mdp" class="input" type="text" placeholder=" " />
                     <div class="cut cut_140"></div>
                     <label for="ancien_mdp" class="ph">ancien mot de passe</label>
                 </div>
                 <div class="input_div fin_mdp">
-                    <input id="new_mdp" class="input" type="text" placeholder=" " />
+                    <input id="new_mdp" name="new_mdp" class="input" type="text" placeholder=" " />
                     <div class="cut cut_140"></div>
                     <label for="new_mdp" class="ph">nouveau mot de passe</label>
                 </div>
                 <div class="input_div fin_mdp">
-                    <input id="conf" class="input" type="text" placeholder=" " />
+                    <input id="conf" name="conf" class="input" type="text" placeholder=" " />
                     <div class="cut cut_230"></div>
                     <label for="conf" class="ph">confirmation du nouveau mot de passe</label>
                 </div>

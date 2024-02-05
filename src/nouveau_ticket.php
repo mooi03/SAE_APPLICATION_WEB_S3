@@ -17,6 +17,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $compteur_requete = "SELECT COUNT(*) as total FROM $table"; // Utiliser le nom de la table en variable
     $resultat_compteur = mysqli_query($connection, $compteur_requete);
+    $ip = $_SERVER['REMOTE_ADDR'] ;
+    $date = date('d-m-y h:i:s') ;
 
     if ($resultat_compteur) {
         $row = mysqli_fetch_assoc($resultat_compteur);
@@ -24,15 +26,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $login = $_SESSION['login'];
 
-        $insert = "INSERT INTO $table (id, login, libellé, urgence, demandeur) VALUES ('$nb', '$login', '$libelle', '$radio', '$demandeur')";
+        $insert = "INSERT INTO $table (id, login, libellé, urgence, demandeur,ip,date) VALUES ('$nb', '$login', '$libelle', '$radio', '$demandeur','$ip','$date')";
 
         if (mysqli_query($connection, $insert)) {
             echo "Inscription réussie !";
+            header("Location: page_principale_utilisateur.php");
         } else {
             echo "Erreur lors de l'inscription : " . mysqli_error($connection);
+            header("Location: page_principale_utilisateur.php");
         }
     } else {
         echo "Erreur lors de la récupération du nombre total de lignes : " . mysqli_error($connection);
+        header("Location: page_principale_utilisateur.php");
     }
 
     mysqli_close($connection);
