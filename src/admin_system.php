@@ -1,3 +1,6 @@
+<?php
+include 'restriction_2.php'
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +11,7 @@
 <body>
 <div class="droite">
     <div class="haut">
-        <a href="" class="lien_bouton" id="deco">déconnexion</a>
+        <a href="decon.php" class="lien_bouton" id="deco">déconnexion</a>
         <div id="bouton_haut">
             <a href=""><img src="logo.PNG" class="img_bouton"></a>
             <a href=""><img src="logo.PNG" class="img_bouton"></a>
@@ -23,7 +26,7 @@
     <div class="gauche">
         <div class="parent_bouton">
             <a href="" class="lien_bouton" style="background-color: #9c9ca1"> <img src="logo.PNG" class="img_bouton"> <p>admin system</p></a>
-            <a href="new_tech.html" class="lien_bouton" > <img src="logo.PNG" class="img_bouton"> <p>nouveau tech</p></a>
+            <a href="new_tech.php" class="lien_bouton" > <img src="logo.PNG" class="img_bouton"> <p>nouveau tech</p></a>
         </div>
     </div>
     <div class="bas">

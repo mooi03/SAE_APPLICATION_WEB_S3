@@ -8,7 +8,7 @@
 <body>
 <div class="droite">
   <div class="haut">
-    <a href="connexion.html" class="lien_bouton" id="co">connexion</a>
+    <a href="connexion.php" class="lien_bouton" id="co">connexion</a>
     <div id="bouton_haut">
       <a href=""><img src="logo.PNG" class="img_bouton"></a>
       <a href=""><img src="logo.PNG" class="img_bouton"></a>
@@ -23,7 +23,7 @@
   <div class="gauche">
     <div class="parent_bouton">
       <a href="" class="lien_bouton" style="background-color: #9c9ca1"> <img src="logo.PNG" class="img_bouton"> <p>Menu</p></a>
-      <a href="register.html" class="lien_bouton"><img src="logo.PNG" class="img_bouton"> <p>Nouveau utilisateur</p></a>
+      <a href="register.php" class="lien_bouton"><img src="logo.PNG" class="img_bouton"> <p>Nouveau utilisateur</p></a>
     </div>
   </div>
   <div class="bas centre">

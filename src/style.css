@@ -323,6 +323,21 @@ body{
     width: 30%;
     margin-left: 65%;
 }
+.confirmation_sans_marge {
+    background-color: #6dfaaa;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    border: solid black;
+    color: #000000;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 150px;
+    text-align: center;
+    width: 30%;
+    margin-left: 65%;
+}
 .confirmation:active {
     background-color: #489b71;
 }
@@ -331,4 +346,26 @@ body{
 }
 #bouton_haut{
 
+}
+#popup{
+    display: none;
+    position: fixed;
+    padding: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f5b8fc;
+}
+.num_ticket{
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border: none; /* Supprime la bordure */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
 }

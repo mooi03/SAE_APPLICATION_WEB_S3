@@ -1,3 +1,6 @@
+<?php
+include 'restriction.php'
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +11,7 @@
 <body>
 <div class="droite">
     <div class="haut">
-        <a href="" class="lien_bouton" id="deco">déconnexion</a>
+        <a href="decon.php" class="lien_bouton" id="deco">déconnexion</a>
         <div id="bouton_haut">
             <a href=""><img src="logo.PNG" class="img_bouton"></a>
             <a href=""><img src="logo.PNG" class="img_bouton"></a>
@@ -23,16 +26,16 @@
         <div class="gauche">
             <div class="parent_bouton">
             <a href="" class="lien_bouton" style="background-color: #9c9ca1"> <img src="logo.PNG" class="img_bouton"> <p>Tableau de bord</p></a>
-            <a href="changement_mdp.html" class="lien_bouton"><img src="logo.PNG" class="img_bouton"> <p>Changement de mot de passe</p></a>
+            <a href="changement_mdp.php" class="lien_bouton"><img src="logo.PNG" class="img_bouton"> <p>Changement de mot de passe</p></a>
             </div>
         </div>
         <div class="bas">
             <div class="flex_row">
                 <div class="stat stat_48 pour_form">
                     <div class="titre"><p>Nouveau ticket</p></div>
-                    <form action="" class="form">
+                    <form action="nouveau_ticket.php" class="form" method="post">
                         <div class="input_div début">
-                            <input id="libellé" class="input" type="text" placeholder=" " />
+                            <input id="libellé" name="libellé" class="input" type="text" placeholder=" " />
                             <div class="cut cut_50"></div>
                             <label for="libellé" class="ph">libellé</label>
                         </div>
@@ -48,7 +51,7 @@
                             <label for="4"> 4</label>
                         </div>
                         <div class="input_div fin">
-                            <input id="nom_du_con" class="input" type="text" placeholder=" " />
+                            <input id="nom_du_con" name="nom_du_con" class="input" type="text" placeholder=" " />
                             <div class="cut cut_110"></div>
                             <label for="nom_du_con" class="ph">nom du concerné</label>
                         </div>

@@ -1,3 +1,6 @@
+<?php
+include 'restriction.php'
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +11,7 @@
 <body>
 <div class="droite">
     <div class="haut">
-        <a href="" class="lien_bouton" id="deco">déconnexion</a>
+        <a href="decon.php" class="lien_bouton" id="deco">déconnexion</a>
         <div id="bouton_haut">
             <a href=""><img src="logo.PNG" class="img_bouton"></a>
             <a href=""><img src="logo.PNG" class="img_bouton"></a>
@@ -22,7 +25,7 @@
 <div class="petit_grand_parent">
     <div class="gauche">
         <div class="parent_bouton">
-            <a href="page_principale_utilisateur.html" class="lien_bouton"> <img src="logo.PNG" class="img_bouton"> <p>Tableau de bord</p></a>
+            <a href="page_principale_utilisateur.php" class="lien_bouton"> <img src="logo.PNG" class="img_bouton"> <p>Tableau de bord</p></a>
             <a href="" class="lien_bouton" style="background-color: #9c9ca1"><img src="logo.PNG" class="img_bouton"> <p>Changement de mot de passe</p></a>
         </div>
     </div>
