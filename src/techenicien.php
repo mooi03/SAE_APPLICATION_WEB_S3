@@ -31,14 +31,18 @@ include 'restriction_3.php'
     <div class="bas">
         <div class="flex_row">
             <div class="stat stat_65">
-                <div class="menu_déroulant"></div>
+                <div class="menu_déroulant">
+                    <?php include 'tab_techenicien_haut.php'?>
+                </div>
             </div>
             <div class="stat stat_32">
                 <div class="menu_déroulant"></div>
             </div>
         </div>
         <div class="stat stat_48">
-            <div class="menu_déroulant"></div>
+            <div class="menu_déroulant">
+                <?php include 'tab_techenicien_bas.php'?>
+            </div>
         </div>
     </div>
 </div>

@@ -7,7 +7,7 @@ $db = "bd_sae";
 $conectdb = mysqli_select_db($connexion, $db) or die ("erreur");
 $table = "ticket" ;
 $login_session = $_SESSION['login'];
-$requete = "SELECT id,login, urgence, demandeur, état,tech FROM $table";
+$requete = "SELECT id,login, urgence, demandeur, état,tech FROM $table WHERE état !='fermer'";
 $resultat = mysqli_query($connexion, $requete);
 
 if ($resultat) {
@@ -19,7 +19,7 @@ if ($resultat) {
         <th>demandeur</th>
         <th>état du ticket</th>
         <th>techenicien</th>
-        <th>fermer le ticketw</th>
+        <th>fermer le ticket</th>
     </tr>';
 
 
