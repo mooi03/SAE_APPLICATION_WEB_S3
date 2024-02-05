@@ -39,6 +39,36 @@ seuls les administrateurs peuvent modifier ou supprimer paramettre et voir les t
 **Archivage Automatique** : Les tickets résolus seront automatiquement enregeistré dans un journal de l'admin systême
 la clarté de l'historique.
 
+## e. Utilisation et utilisabilité :
+
+### Expérience Utilisateur
+
+**Interface Intuitive** : L'interface utilisateur doit être intuitive, facilitant la navigation et l'utilisation pour 
+des utilisateurs de différents niveaux de compétence.
+
+**Ergonomie** : L'application doit être conçue de manière à minimiser la fatigue visuelle et à favoriser une utilisation
+confortable sur des périodes prolongées.
+
+**Réactivité** : Les interactions avec l'interface utilisateur doivent être réactives, assurant une expérience 
+utilisateur fluide sans délais perceptibles.
+
+### Accessibilité
+
+**Accessibilité Universelle** : notre application web devras respecter les norme W3C pour garantir que tout le monde 
+pourras utiliser le site sans problème.
+
+**Complatibilité web** : nous devrons aussi faire attention a ce que notre application soit compatible avec les 
+principeaux navigateur web c'est a dire chrome, firefox, opera ...  
+
+
+## f. Maintenance et protabilité  :
+
+Nous allons donc comme demander dans le chaier des charges porter notre application sur un raspberry pi qui seras accesible 
+depuis le poste de l'iut. donc nous arrons deux version une qui seras sur notre git et l'autre qui seras sur le raspberry 
+de l'iut et quand nous arriverons a une version importante nous ferrons une maintnance sur le raspberry pour mettre 
+l'application à jour. Il est aussi possible qu'il soit fait des maintenance (hotfix) rapide a cas ou il y aurait un gros bug qui
+rende l'application inutilisable.
+
 ### *Pour la version V0.1 :*
 
 L'application ne prendra pas en compte cette partie du cahier des exigences a cette version, car ne sera toujours 
