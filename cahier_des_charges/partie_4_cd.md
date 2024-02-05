@@ -17,7 +17,7 @@ Dans ce projet, nous avons certaines priorités qui nous sont imposer et d'autre
 
 11 novembre : fin du deuxième cycle de la V0.2
 
-12 novembre : Début du deuxième cycle de la V0.3 implémentation sur carte sd et sur serveur RPI4
+12 novembre : Début du deuxième cycle de la V0.3 serveur RPI4
 
 18 novembre : fin du deuxième cycle de la V0.3
 
