@@ -45,7 +45,7 @@ if ($resultat) {
     <button type="submit" class="confirmation_sans_marge">modifier</button>
     </div>
     </form>
-    <button onclick="fermerPopup()" class="confirmation_sans_marge" style="background-color: crimson ">Fermers</button>
+    <button onclick="fermerPopup()" class="confirmation_sans_marge" style="background-color: crimson ">Fermer</button>
 </div>
 <div id="popup_urgence" style="display: none">
 <form method="post" class="form form_urgence" action="">
