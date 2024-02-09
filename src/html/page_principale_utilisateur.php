@@ -5,35 +5,35 @@ include 'restriction.php'
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>utilisateur</title>
 </head>
 <body>
 <div class="droite">
     <div class="haut">
-        <a href="decon.php" class="lien_bouton" id="deco">déconnexion</a>
+        <a href="../php/decon.php" class="lien_bouton" id="deco">déconnexion</a>
         <div id="bouton_haut">
-            <a href=""><img src="logo.PNG" class="img_bouton"></a>
-            <a href=""><img src="logo.PNG" class="img_bouton"></a>
+            <a href=""><img src="../png/logo.PNG" class="img_bouton"></a>
+            <a href=""><img src="../png/logo.PNG" class="img_bouton"></a>
         </div>
         <h3 class="nom_page">Tableau de bord</h3>
         <div class="logo">
-        <img class="logo_img" src="logo.PNG">
+        <img class="logo_img" src="../png/logo.PNG">
         </div>
     </div>
 </div>
     <div class="grand_parent">
         <div class="gauche">
             <div class="parent_bouton">
-            <a href="" class="lien_bouton" style="background-color: #9c9ca1"> <img src="logo.PNG" class="img_bouton"> <p>Tableau de bord</p></a>
-            <a href="changement_mdp.php" class="lien_bouton"><img src="logo.PNG" class="img_bouton"> <p>Changement de mot de passe</p></a>
+            <a href="" class="lien_bouton" style="background-color: #9c9ca1"> <img src="../png/logo.PNG" class="img_bouton"> <p>Tableau de bord</p></a>
+            <a href="changement_mdp.php" class="lien_bouton"><img src="../png/logo.PNG" class="img_bouton"> <p>Changement de mot de passe</p></a>
             </div>
         </div>
         <div class="bas">
             <div class="flex_row">
                 <div class="stat stat_48 pour_form">
                     <div class="titre"><p>Nouveau ticket</p></div>
-                    <form action="nouveau_ticket.php" class="form" method="post">
+                    <form action="../php/nouveau_ticket.php" class="form" method="post">
                         <div class="input_div début">
                             <input id="libellé" name="libellé" class="input" type="text" placeholder=" " />
                             <div class="cut cut_50"></div>
@@ -67,7 +67,7 @@ include 'restriction.php'
             </div>
             <div class="stat stat_49 centre">
                 <div class="menu_déroulant" style="height: 550px;">
-                    <?php include 'tab_utilisateur.php'?>
+                    <?php include 'tab_utilisateur.php' ?>
             </div>
             </div>
         </div>

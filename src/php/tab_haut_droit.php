@@ -7,7 +7,7 @@ $db = "bd_sae";
 $conectdb = mysqli_select_db($connexion, $db) or die ("erreur");
 $table = "ticket" ;
 $login_session = $_SESSION['login'];
-$requete = "SELECT id,login, urgence, demandeur, état,tech FROM  $table WHERE état = 'ouvert'";
+$requete = "SELECT id,login, urgence, demandeur, état,tech, date, ip FROM  $table WHERE état = 'fermer'";
 $resultat = mysqli_query($connexion, $requete);
 
 if ($resultat) {
@@ -18,8 +18,9 @@ if ($resultat) {
         <th>niveau d"urgence</th>
         <th>demandeur</th>
         <th>état du ticket</th>
-        <th>techenicien</th>
-        <th>prendre en charge le ticket</th>
+        <th>techenicien en charge</th>
+        <th>date de création</th>
+        <th>adresse ip</th>
     </tr>';
 
 
@@ -32,7 +33,8 @@ if ($resultat) {
         <td>' . $row['demandeur'] . '</td>
         <td>' . $row['état'] . '</td>
         <td>' . $row['tech'] . '</td>
-        <td><a href="prise.php?id=' . $row['id'] . '"><img src="plus.png" style="height: 40px; width: 40px "></a></td>
+        <td>' . $row['date'] . '</td>
+        <td>' . $row['ip'] . '</td>
     </tr>';
     }
 
@@ -44,7 +46,7 @@ if ($resultat) {
 </div>
     <button onclick="fermerPopup()" class="confirmation_sans_marge" style="background-color: crimson ">Fermer</button>
 </div>
-<script type="text/javascript" src="pour_tab.js"></script>';
+<script type="text/javascript" src="../javascript/pour_tab.js"></script>';
 
 
     mysqli_free_result($resultat);

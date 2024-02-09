@@ -32,7 +32,7 @@ if ($resultat) {
         <td>' . $row['demandeur'] . '</td>
         <td>' . $row['état'] . '</td>
         <td><button class="tech" value="' . $row['id'] . '">' . $row['tech'] . '</button></td>
-        <td><a href="fermeture.php?id=' . $row['id'] . '"><img src="croix.png" style="height: 40px; width: 40px "></a></td>
+        <td><a href="fermeture.php?id=' . $row['id'] . '"><img src="../png/croix.png" style="height: 40px; width: 40px "></a></td>
     </tr>';
     }
 
@@ -80,8 +80,8 @@ if ($resultat) {
     </form>
     <button onclick="fermerPopup_tech()" class="confirmation_sans_marge" style="background-color: crimson ">Fermer</button>
 </div>
-<script type="text/javascript" src="pour_tab_modification.js"></script>
-<script type="text/javascript" src="pour_tab_modification_tech.js"></script>';
+<script type="text/javascript" src="../javascript/pour_tab_modification.js"></script>
+<script type="text/javascript" src="../javascript/pour_tab_modification_tech.js"></script>';
 
 
     mysqli_free_result($resultat);

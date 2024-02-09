@@ -7,7 +7,7 @@ $db = "bd_sae";
 $conectdb = mysqli_select_db($connexion, $db) or die ("erreur");
 $table = "ticket" ;
 $login_session = $_SESSION['login'];
-$requete = "SELECT id,login, urgence, demandeur, état,tech, date, ip FROM  $table WHERE état = 'fermer'";
+$requete = "SELECT id,login, urgence, demandeur, état,tech, date, ip FROM  $table WHERE état != 'fermer'";
 $resultat = mysqli_query($connexion, $requete);
 
 if ($resultat) {
@@ -46,7 +46,7 @@ if ($resultat) {
 </div>
     <button onclick="fermerPopup()" class="confirmation_sans_marge" style="background-color: crimson ">Fermer</button>
 </div>
-<script type="text/javascript" src="pour_tab.js"></script>';
+<script type="text/javascript" src="../javascript/pour_tab.js"></script>';
 
 
     mysqli_free_result($resultat);

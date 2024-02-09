@@ -30,7 +30,7 @@ if ($resultat) {
         <td>' . $row['urgence'] . '</td>
         <td>' . $row['demandeur'] . '</td>
         <td>' . $row['état'] . '</td>
-        <td><a href="fermeture_tech.php?id=' . $row['id'] . '"><img src="croix.png" style="height: 40px; width: 40px "></a></td>
+        <td><a href="fermeture_tech.php?id=' . $row['id'] . '"><img src="../png/croix.png" style="height: 40px; width: 40px "></a></td>
     </tr>';
     }
 
@@ -42,7 +42,7 @@ if ($resultat) {
 </div>
     <button onclick="fermerPopup()" class="confirmation_sans_marge" style="background-color: crimson ">Fermer</button>
 </div>
-<script type="text/javascript" src="pour_tab.js"></script>';
+<script type="text/javascript" src="../javascript/pour_tab.js"></script>';
 
 
     mysqli_free_result($resultat);
