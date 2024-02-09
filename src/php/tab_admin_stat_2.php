@@ -1,15 +1,13 @@
 <?php
-$host = "localhost";
-$user = "root";
-$password = "tutu";
-$connexion = mysqli_connect($host, $user, $password) or die("Erreur de connexion");
-
-$db = "bd_sae";
-mysqli_select_db($connexion, $db) or die("Erreur de sélection de la base de données");
+require 'connexion_bd.php';
+//connexion à la base de données
+$table = "utilisateur";
+$connexionManager = new ConnexionBaseDeDonnees();
+$connection = $connexionManager->getConnection();
 
 // Requête pour récupérer le nombre de techniciens
-$sqlTechniciens = "SELECT COUNT(*) AS total_techniciens FROM utilisateur WHERE perm = 3";
-$resultTechniciens = mysqli_query($connexion, $sqlTechniciens) or die("Erreur de requête pour les techniciens");
+$sqlTechniciens = "SELECT COUNT(*) AS total_techniciens FROM $table WHERE perm = 3";
+$resultTechniciens = mysqli_query($connection, $sqlTechniciens) or die("Erreur de requête pour les techniciens");
 
 if ($resultTechniciens) {
     $rowTechniciens = mysqli_fetch_assoc($resultTechniciens);
@@ -21,5 +19,5 @@ if ($resultTechniciens) {
 }
 
 // Fermer la connexion à la base de données
-mysqli_close($connexion);
+mysqli_close($connection);
 ?>

@@ -1,12 +1,10 @@
 <?php
-$host = "localhost";
-$user = "root";
-$password = "tutu";
-$connexion = mysqli_connect($host, $user, $password) or die("Erreur de connexion");
+require 'connexion_bd.php';
+//connexion à la base de données
+$table = "ticket" ;
+$connexionManager = new ConnexionBaseDeDonnees();
+$connexion = $connexionManager->getConnection();
 $tech = $_SESSION['login'];
-$db = "bd_sae";
-mysqli_select_db($connexion, $db) or die("Erreur de sélection de la base de données");
-
 
 $sql = "SELECT COUNT(*) AS total_tickets FROM ticket WHERE tech = $tech AND état != 'fermer'";
 $result = mysqli_query($connexion, $sql) or die("Erreur de requête");

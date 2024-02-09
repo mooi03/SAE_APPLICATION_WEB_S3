@@ -1,16 +1,14 @@
 <?php
-$host = "localhost";
-$user = "root";
-$password = "tutu";
-$connexion = mysqli_connect($host, $user, $password) or die("Erreur de connexion");
 
-
-$db = "bd_sae";
-mysqli_select_db($connexion, $db) or die("Erreur de sélection de la base de données");
+require 'connexion_bd.php';
+//connexion à la base de données
+$table = "utilisateur";
+$connexionManager = new ConnexionBaseDeDonnees();
+$connection = $connexionManager->getConnection();
 
 // Requête pour récupérer le nombre de tickets
-$sql = "SELECT COUNT(*) AS total_utilisateur FROM utilisateur WHERE perm = 0";
-$result = mysqli_query($connexion, $sql) or die("Erreur de requête");
+$sql = "SELECT COUNT(*) AS total_utilisateur FROM $table WHERE perm = 0";
+$result = mysqli_query($connection, $sql) or die("Erreur de requête");
 
 if ($result) {
     $row = mysqli_fetch_assoc($result);
@@ -25,5 +23,5 @@ if ($result) {
 }
 
 // Fermer la connexion à la base de données
-mysqli_close($connexion);
+mysqli_close($connection);
 ?>

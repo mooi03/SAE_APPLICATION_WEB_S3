@@ -1,11 +1,9 @@
 <?php
-$host = "localhost";
-$user = "root";
-$password = "tutu";
-$connexion = mysqli_connect($host, $user, $password) or die ("erreur");
-$db = "bd_sae";
-$conectdb = mysqli_select_db($connexion, $db) or die ("erreur");
+require 'connexion_bd.php';
+//connexion à la base de données
 $table = "ticket" ;
+$connexionManager = new ConnexionBaseDeDonnees();
+$connexion = $connexionManager->getConnection();
 $login_session = $_SESSION['login'];
 $requete = "SELECT id,login, urgence, demandeur, état,tech FROM  $table WHERE état = 'ouvert'";
 $resultat = mysqli_query($connexion, $requete);

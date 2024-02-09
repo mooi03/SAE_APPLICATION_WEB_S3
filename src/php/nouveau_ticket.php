@@ -1,11 +1,9 @@
 <?php
-$host = "localhost";
-$user = "root";
-$password = "tutu";
-$connection = mysqli_connect($host, $user, $password) or die("erreur");
-$db = "bd_sae";
-$select_db = mysqli_select_db($connection, $db) or die("erreur");
+require 'connexion_bd.php';
+//connexion à la base de données
 $table = "ticket";
+$connexionManager = new ConnexionBaseDeDonnees();
+$connection = $connexionManager->getConnection();
 
 session_start();
 

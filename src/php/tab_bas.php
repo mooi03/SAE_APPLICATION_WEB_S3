@@ -1,14 +1,12 @@
 <?php
-$host = "localhost";
-$user = "root";
-$password = "tutu";
-$connexion = mysqli_connect($host, $user, $password) or die ("erreur");
-$db = "bd_sae";
-$conectdb = mysqli_select_db($connexion, $db) or die ("erreur");
+require 'connexion_bd.php';
+//connexion à la base de données
 $table = "erreur_co" ;
+$connexionManager = new ConnexionBaseDeDonnees();
+$connection = $connexionManager->getConnection();
 $login_session = $_SESSION['login'];
 $requete = "SELECT mdp,login,date,ip FROM $table";
-$resultat = mysqli_query($connexion, $requete);
+$resultat = mysqli_query($connection, $requete);
 
 if ($resultat) {
     echo '<table>
@@ -35,5 +33,5 @@ if ($resultat) {
 
     mysqli_free_result($resultat);
 }
-mysqli_close($connexion);
+mysqli_close($connection);
 ?>

@@ -1,19 +1,18 @@
 <?php
-$host = "localhost";
-$user = "root";
-$password = "tutu";
-$connexion = mysqli_connect($host, $user, $password) or die("erreur");
-$db = "bd_sae";
-$conectdb = mysqli_select_db($connexion, $db) or die("erreur");
+require 'connexion_bd.php';
+//connexion à la base de données
 $table = "ticket";
+$connexionManager = new ConnexionBaseDeDonnees();
+$connection = $connexionManager->getConnection();
+
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $ticketId = $_POST['id'];
     $libelle = $_POST['libelle'];
 
     $updateQuery = "UPDATE $table SET libellé = '$libelle' WHERE id = $ticketId";
-    mysqli_query($connexion, $updateQuery);
+    mysqli_query($connection, $updateQuery);
 }
 
-mysqli_close($connexion);
+mysqli_close($connection);
 ?>

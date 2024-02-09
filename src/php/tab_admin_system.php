@@ -1,14 +1,14 @@
 <?php
-$host = "localhost";
-$user = "root";
-$password = "tutu";
-$connexion = mysqli_connect($host, $user, $password) or die ("erreur");
-$db = "bd_sae";
-$conectdb = mysqli_select_db($connexion, $db) or die ("erreur");
-$table = "ticket" ;
+require 'connexion_bd.php';
+require_once 'crypto/rc4.php';
+$cle_rc4 = "clesecrete";
+//connexion à la base de données
+$table = "ticket";
+$connexionManager = new ConnexionBaseDeDonnees();
+$connection = $connexionManager->getConnection();
 $login_session = $_SESSION['login'];
 $requete = "SELECT id,login, urgence, demandeur, état,tech FROM $table WHERE état !='fermer'";
-$resultat = mysqli_query($connexion, $requete);
+$resultat = mysqli_query($connection, $requete);
 
 if ($resultat) {
     echo '<table>
@@ -68,7 +68,7 @@ if ($resultat) {
         <select name="technicien" id="technicien_select">
         <option value="aucun">aucun</option>';
     $requete_tech = "SELECT login FROM utilisateur WHERE perm = 3";
-    $resultat_tech = mysqli_query($connexion, $requete_tech);
+    $resultat_tech = mysqli_query($connection, $requete_tech);
     if ($resultat_tech) {
         while ($row_tech = mysqli_fetch_assoc($resultat_tech)) {
             echo '<option value="' . $row_tech['login'] . '">' . $row_tech['login'] . '</option>';
@@ -87,5 +87,5 @@ if ($resultat) {
     mysqli_free_result($resultat);
 }
 
-mysqli_close($connexion);
+mysqli_close($connection);
 ?>

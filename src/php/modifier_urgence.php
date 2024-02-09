@@ -1,19 +1,18 @@
 <?php
-$host = "localhost";
-$user = "root";
+require 'connexion_bd.php';
+//connexion à la base de données
 $table = "ticket";
-$password = "tutu";
-$connexion = mysqli_connect($host, $user, $password) or die ("erreur");
-$db = "bd_sae";
-$conectdb = mysqli_select_db($connexion, $db) or die ("erreur");
+$connexionManager = new ConnexionBaseDeDonnees();
+$connection = $connexionManager->getConnection();
+
 
 if (isset($_POST['id']) && isset($_POST['urgence'])) {
-    $id = mysqli_real_escape_string($connexion, $_POST['id']);
-    $urgence = mysqli_real_escape_string($connexion, $_POST['urgence']);
+    $id = mysqli_real_escape_string($connection, $_POST['id']);
+    $urgence = mysqli_real_escape_string($connection, $_POST['urgence']);
 
     $requete = "UPDATE $table SET urgence = '$urgence' WHERE id = $id";
-    $resultat = mysqli_query($connexion, $requete);
+    $resultat = mysqli_query($connection, $requete);
 }
 
-mysqli_close($connexion);
+mysqli_close($connection);
 ?>
