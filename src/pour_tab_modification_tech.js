@@ -13,9 +13,7 @@ document.querySelector('.form_tech').addEventListener('submit', function(e) {
 });
 function fermerPopup_tech() {
     document.getElementById('popup_tech').style.display = 'none';
-    location.reload()
 }
-
 function modtech(ticketId, urgence) {
     var xhr = new XMLHttpRequest();
     xhr.open("POST", "modifier_tech.php", true);

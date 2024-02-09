@@ -42,7 +42,6 @@ document.querySelector('.form_urgence').addEventListener('submit', function(e) {
 function fermerPopup() {
     document.getElementById('popup').style.display = 'none';
     document.getElementById('popup_urgence').style.display = 'none';
-    location.reload()
 }
 function getLibelle(ticketId) {
     var xhr = new XMLHttpRequest();

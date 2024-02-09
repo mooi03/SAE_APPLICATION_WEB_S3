@@ -2,7 +2,7 @@
 $host = "localhost";
 $user = "root";
 $table = "ticket";
-$password = "";
+$password = "tutu";
 $connexion = mysqli_connect($host, $user, $password) or die ("erreur");
 $db = "bd_sae";
 $conectdb = mysqli_select_db($connexion, $db) or die ("erreur");

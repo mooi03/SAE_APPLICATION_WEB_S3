@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
 $user = "root";
-$password = "";
+$password = "tutu";
 $connexion = mysqli_connect($host, $user, $password) or die ("erreur");
 $db = "bd_sae";
 $conectdb = mysqli_select_db($connexion, $db) or die ("erreur");
@@ -78,7 +78,7 @@ if ($resultat) {
         echo '</select>
         <button type="submit" class="confirmation_sans_marge" style="margin-top: 20px">Valider</button>
     </form>
-    <button onclick="fermerPopup()" class="confirmation_sans_marge" style="background-color: crimson ">Fermer</button>
+    <button onclick="fermerPopup_tech()" class="confirmation_sans_marge" style="background-color: crimson ">Fermer</button>
 </div>
 <script type="text/javascript" src="pour_tab_modification.js"></script>
 <script type="text/javascript" src="pour_tab_modification_tech.js"></script>';

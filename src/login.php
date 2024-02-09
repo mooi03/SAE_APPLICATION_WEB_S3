@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
 $user = "root";
-$password = "";
+$password = "tutu";
 $connection = mysqli_connect($host, $user, $password) or die ("erreur");
 $db = "bd_sae";
 $conectdb = mysqli_select_db($connection, $db) or die ("erreur");

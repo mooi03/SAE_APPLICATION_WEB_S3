@@ -5,7 +5,7 @@ include 'restriction.php';
 //connexion à la base de données
 $host = "localhost";
 $user = "root";
-$password = "";
+$password = "tutu";
 $cle_rc4 = "clesecrete";
 $connection = mysqli_connect($host, $user, $password) or die ("erreur");
 $db = "bd_sae";

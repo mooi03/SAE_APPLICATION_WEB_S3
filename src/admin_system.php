@@ -36,11 +36,14 @@ include 'restriction_2.php'
             </div>
         </div>
         <div class="flex_row_19">
-            <div class="stat stat_32">
+            <div class="stat stat_32 centre" >
+                <?php include 'tab_admin_stat_1.php'?>
             </div>
-            <div class="stat stat_32">
+            <div class="stat stat_32 centre">
+                <?php include 'tab_admin_stat_2.php'?>
             </div>
-            <div class="stat stat_32">
+            <div class="stat stat_32 centre">
+                <?php include 'tab_admin_stat_3.php'?>
             </div>
         </div>
     </div>
