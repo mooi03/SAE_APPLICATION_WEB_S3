@@ -28,14 +28,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if (mysqli_query($connection, $insert)) {
             echo "Inscription réussie !";
-            header("Location: page_principale_utilisateur.php");
+            header("Location: ../html/page_principale_utilisateur.php");
         } else {
             echo "Erreur lors de l'inscription : " . mysqli_error($connection);
-            header("Location: page_principale_utilisateur.php");
+            header("Location: ../html/page_principale_utilisateur.php");
         }
     } else {
         echo "Erreur lors de la récupération du nombre total de lignes : " . mysqli_error($connection);
-        header("Location: page_principale_utilisateur.php");
+        header("Location: ../html/page_principale_utilisateur.php");
     }
 
     mysqli_close($connection);

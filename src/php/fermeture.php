@@ -15,10 +15,10 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
         mysqli_stmt_bind_param($stmt, "i", $ticketId);
         $result = mysqli_stmt_execute($stmt);
         if ($result) {
-            header('Location: admin_system.php');;
+            header('Location: ../html/admin_system.php');;
         }
         mysqli_stmt_close($stmt);
     }
 }
-mysqli_close($connexion);
+mysqli_close($connection);
 ?>

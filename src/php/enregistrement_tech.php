@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if (mysqli_num_rows($resultat) > 0) {
             echo "Ce login est déjà utilisé. Veuillez en choisir un autre.";
-            header("Location: new_tech.php");
+            header("Location: ../html/new_tech.php");
         }
         else {
             $insertion = "INSERT INTO $table (login, mdp, perm ) VALUES ('$login', '" . bin2hex($mdp_chiffre_rc4) . "', 3)";
@@ -29,15 +29,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             if (mysqli_query($connection, $insertion)) {
                 echo "Inscription réussie !";
-                header("Location: new_tech.php");
+                header("Location: ../html/new_tech.php");
             } else {
                 echo "Erreur lors de l'inscription : " . mysqli_error($connection);
-                header("Location: new_tech.php");
+                header("Location: ../html/new_tech.php");
             }
         }
     }else{
         print_r("mdp ert conf diff");
-        header("Location: new_tech.php");
+        header("Location: ../html/new_tech.php");
     }
     mysqli_close($connection);
 }

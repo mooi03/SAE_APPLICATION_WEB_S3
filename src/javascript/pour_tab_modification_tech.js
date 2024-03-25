@@ -16,7 +16,7 @@ function fermerPopup_tech() {
 }
 function modtech(ticketId, urgence) {
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "modifier_tech.php", true);
+    xhr.open("POST", "../php/modifier_tech.php", true);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhr.send("id=" + ticketId + "&tech=" + urgence);
 }

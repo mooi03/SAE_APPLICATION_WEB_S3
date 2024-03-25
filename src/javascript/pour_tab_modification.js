@@ -45,7 +45,7 @@ function fermerPopup() {
 }
 function getLibelle(ticketId) {
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "get_libelle.php?id=" + ticketId, false);
+    xhr.open("GET", "../php/get_libelle.php?id=" + ticketId, false);
     xhr.send();
     return xhr.responseText;
 }
@@ -57,7 +57,7 @@ function modLibelle(ticketId, libelle) {
 }
 function modUrgence(ticketId, urgence) {
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "modifier_urgence.php", true);
+    xhr.open("POST", "../php/modifier_urgence.php", true);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhr.send("id=" + ticketId + "&urgence=" + urgence);
 }

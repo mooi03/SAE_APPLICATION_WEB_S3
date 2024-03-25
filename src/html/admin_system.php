@@ -1,5 +1,5 @@
 <?php
-include 'restriction_2.php'
+include '../php/restriction_2.php'
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -32,18 +32,18 @@ include 'restriction_2.php'
     <div class="bas">
         <div class="stat flex_row_79">
             <div class="menu_déroulant" style="height: 650px;">
-                <?php include 'tab_admin_system.php' ?>
+                <?php include '../php/tab_admin_system.php' ?>
             </div>
         </div>
         <div class="flex_row_19">
             <div class="stat stat_32 centre" >
-                <?php include 'tab_admin_stat_1.php' ?>
+                <?php include '../php/tab_admin_stat_1.php' ?>
             </div>
             <div class="stat stat_32 centre">
-                <?php include 'tab_admin_stat_2.php' ?>
+                <?php include '../php/tab_admin_stat_2.php' ?>
             </div>
             <div class="stat stat_32 centre">
-                <?php include 'tab_admin_stat_3.php' ?>
+                <?php include '../php/tab_admin_stat_3.php' ?>
             </div>
         </div>
     </div>

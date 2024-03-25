@@ -1,5 +1,5 @@
 <?php
-include 'restriction.php'
+include '../php/restriction.php'
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -67,7 +67,7 @@ include 'restriction.php'
             </div>
             <div class="stat stat_49 centre">
                 <div class="menu_déroulant" style="height: 550px;">
-                    <?php include 'tab_utilisateur.php' ?>
+                    <?php include '../php/tab_utilisateur.php' ?>
             </div>
             </div>
         </div>

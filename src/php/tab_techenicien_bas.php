@@ -1,5 +1,4 @@
 <?php
-require 'connexion_bd.php';
 //connexion à la base de données
 $table = "ticket" ;
 $connexionManager = new ConnexionBaseDeDonnees();
@@ -30,7 +29,7 @@ if ($resultat) {
         <td>' . $row['demandeur'] . '</td>
         <td>' . $row['état'] . '</td>
         <td>' . $row['tech'] . '</td>
-        <td><a href="prise.php?id=' . $row['id'] . '"><img src="../png/plus.png" style="height: 40px; width: 40px "></a></td>
+        <td><a href="../php/prise.php?id=' . $row['id'] . '"><img src="../png/plus.png" style="height: 40px; width: 40px "></a></td>
     </tr>';
     }
 

@@ -1,5 +1,4 @@
 <?php
-require 'connexion_bd.php';
 //connexion à la base de données
 $table = "utilisateur";
 $connexionManager = new ConnexionBaseDeDonnees();

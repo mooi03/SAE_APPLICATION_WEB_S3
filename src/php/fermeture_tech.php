@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
         mysqli_stmt_bind_param($stmt, "i", $ticketId);
         $result = mysqli_stmt_execute($stmt);
         if ($result) {
-            header('Location: techenicien.php');;
+            header('Location: ../html/techenicien.php');;
         }
         mysqli_stmt_close($stmt);
     }

@@ -1,5 +1,5 @@
 <?php
-include 'restriction_2.php'
+include '../php/restriction_2.php'
 ?>
 <!DOCTYPE html>
 <html lang="fr">

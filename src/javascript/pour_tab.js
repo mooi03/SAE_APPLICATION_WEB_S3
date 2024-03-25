@@ -15,7 +15,7 @@ function afficherPopup(ticketId) {
             document.getElementById('popup').style.display = 'block';
         }
     };
-    xhr.open("GET", "get_libelle.php?id=" + ticketId, true);
+    xhr.open("GET", "../php/get_libelle.php?id=" + ticketId, true);
     xhr.send();
 }
 
