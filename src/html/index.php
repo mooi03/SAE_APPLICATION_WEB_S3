@@ -29,7 +29,7 @@
   <div class="bas centre" style="justify-content: center">
       <div class="stat stat_65" style="width: 65%">
           <div class="menu_déroulant">
-              <?php include 'tab_menu.php' ?>
+              <?php include '../php/tab_menu.php' ?>
           </div>
       </div>
   </div>
