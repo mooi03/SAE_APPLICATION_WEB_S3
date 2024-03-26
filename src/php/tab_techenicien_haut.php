@@ -3,10 +3,10 @@ require 'connexion_bd.php';
 //connexion à la base de données
 $table = "ticket" ;
 $connexionManager = new ConnexionBaseDeDonnees();
-$connexion = $connexionManager->getConnection();
+$connection = $connexionManager->getConnection();
 $login_session = $_SESSION['login'];
 $requete = "SELECT id,login, urgence, demandeur, état,tech FROM  $table WHERE état != 'fermer' AND tech = '$login_session'";
-$resultat = mysqli_query($connexion, $requete);
+$resultat = mysqli_query($connection, $requete);
 
 if ($resultat) {
     echo '<table>
@@ -28,22 +28,26 @@ if ($resultat) {
         <td>' . $row['urgence'] . '</td>
         <td>' . $row['demandeur'] . '</td>
         <td>' . $row['état'] . '</td>
-        <td><a href="fermeture_tech.php?id=' . $row['id'] . '"><img src="../png/croix.png" style="height: 40px; width: 40px "></a></td>
+        <td><a href="../php/fermeture.php?id=' . $row['id'] . '"><img src="../png/croix.png" style="height: 40px; width: 40px "></a></td>
     </tr>';
     }
 
     echo '</table>';
     echo '
-<div id="popup" style="display: none">
-    <div class="déroulant_popup">
-    <p id="popup_libelle"></p>
-</div>
+<div id="popup" style="display: none; height: 450px">
+<form method="post" class="form" action="">
+<div class="input_div début" style="margin-bottom: 30px; height: 200px">
+    <textarea class="input" name="libelle" id="libelle"> </textarea>
+    <button type="submit" class="confirmation_sans_marge">modifier</button>
+    </div>
+    </form>
     <button onclick="fermerPopup()" class="confirmation_sans_marge" style="background-color: crimson ">Fermer</button>
 </div>
-<script type="text/javascript" src="../javascript/pour_tab.js"></script>';
+<script type="text/javascript" src="../javascript/pour_tab_modification.js"></script>';
 
 
     mysqli_free_result($resultat);
 }
-mysqli_close($connexion);
+
+mysqli_close($connection);
 ?>
