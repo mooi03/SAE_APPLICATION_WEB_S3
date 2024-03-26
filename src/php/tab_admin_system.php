@@ -7,7 +7,7 @@ $table = "ticket";
 $connexionManager = new ConnexionBaseDeDonnees();
 $connection = $connexionManager->getConnection();
 $login_session = $_SESSION['login'];
-$requete = "SELECT id,login, urgence, demandeur, état,tech FROM $table";
+$requete = "SELECT id,login, urgence, salle, état,tech FROM $table";
 $resultat = mysqli_query($connection, $requete);
 
 if ($resultat) {
@@ -16,7 +16,7 @@ if ($resultat) {
         <th>numéro du ticket</th>
         <th>créateur du ticket</th>
         <th>niveau d"urgence</th>
-        <th>demandeur</th>
+        <th>salle</th>
         <th>état du ticket</th>
         <th>techenicien</th>
         <th>fermer le ticket</th>
@@ -29,7 +29,7 @@ if ($resultat) {
         <td><button class="num_ticket" value="' . $row['id'] . '">' . $row['id'] . '</button></td>
         <td>' . $row['login'] . '</td>
         <td><button class="urgence" value="' . $row['id'] . '">' . $row['urgence'] . '</button></td>
-        <td>' . $row['demandeur'] . '</td>
+        <td>' . $row['salle'] . '</td>
         <td>' . $row['état'] . '</td>
         <td><button class="tech" value="' . $row['id'] . '">' . $row['tech'] . '</button></td>
         <td><a href="../php/fermeture.php?id=' . $row['id'] . '"><img src="../png/croix.png" style="height: 40px; width: 40px "></a></td>

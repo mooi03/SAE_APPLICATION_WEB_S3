@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $libelle = mysqli_real_escape_string($connection, $_POST['libelle']); // Modifié la variable pour éviter les caractères spéciaux
     $radio = mysqli_real_escape_string($connection, $_POST['radio']);
-    $demandeur = mysqli_real_escape_string($connection, $_POST['nom_du_con']);
+    $salle = mysqli_real_escape_string($connection, $_POST['salle']);
 
     $compteur_requete = "SELECT max(id) as total FROM $table"; // Utiliser le nom de la table en variable
     $resultat_compteur = mysqli_query($connection, $compteur_requete);
@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $login = $_SESSION['login'];
 
-        $insert = "INSERT INTO $table (id, login, libellé, urgence, demandeur,ip,date) VALUES ('$nb', '$login', '$libelle', '$radio', '$demandeur','$ip','$date')";
+        $insert = "INSERT INTO $table (id, login, libellé, urgence, salle,ip,date) VALUES ('$nb', '$login', '$libelle', '$radio', '$salle','$ip','$date')";
 
         if (mysqli_query($connection, $insert)) {
             echo "Inscription réussie !";

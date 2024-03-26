@@ -4,7 +4,7 @@ $table = "ticket" ;
 $connexionManager = new ConnexionBaseDeDonnees();
 $connexion = $connexionManager->getConnection();
 $login_session = $_SESSION['login'];
-$requete = "SELECT id,login, urgence, demandeur, état,tech FROM  $table WHERE état = 'ouvert'";
+$requete = "SELECT id,login, urgence, salle, état,tech FROM  $table WHERE état = 'ouvert'";
 $resultat = mysqli_query($connexion, $requete);
 
 if ($resultat) {
@@ -13,7 +13,7 @@ if ($resultat) {
         <th>numéro du ticket</th>
         <th>créateur du ticket</th>
         <th>niveau d"urgence</th>
-        <th>demandeur</th>
+        <th>salle</th>
         <th>état du ticket</th>
         <th>techenicien</th>
         <th>prendre en charge le ticket</th>
@@ -26,7 +26,7 @@ if ($resultat) {
         <td><button class="num_ticket" value="' . $row['id'] . '">' . $row['id'] . '</button></td>
         <td>' . $row['login'] . '</td>
         <td>' . $row['urgence'] . '</td>
-        <td>' . $row['demandeur'] . '</td>
+        <td>' . $row['salle'] . '</td>
         <td>' . $row['état'] . '</td>
         <td>' . $row['tech'] . '</td>
         <td><a href="../php/prise.php?id=' . $row['id'] . '"><img src="../png/plus.png" style="height: 40px; width: 40px "></a></td>

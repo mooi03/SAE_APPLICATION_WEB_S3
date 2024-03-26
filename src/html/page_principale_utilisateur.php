@@ -35,22 +35,20 @@ include '../php/connexion_bd.php';
             <div class="stat stat_48 pour_form">
                 <div class="titre"><p>Nouveau ticket</p></div>
                 <form action="../php/nouveau_ticket.php" class="form" method="post" style="margin-top: 30px">
-                    <div class="">
-                        <label for="libelle" class="text_libelle">libellé</label>
-                        <select name="libelle" id="libelle" class="input_div début" style="background-color: black ; color: white">
-                            <?php
-                            $connexion = new ConnexionBaseDeDonnees();
-                            $connection = $connexion->getConnection();
-                            $query = "SELECT texte FROM libelle";
-                            $result = mysqli_query($connection, $query);
-                            if(mysqli_num_rows($result) > 0) {
-                                while($row = mysqli_fetch_assoc($result)) {
-                                    echo '<option style="color : white" value="' . $row['texte'] . '">' . $row['texte'] . '</option>';
-                                }
+                    <label for="libelle" class="text">libellé</label>
+                    <select name="libelle" id="libelle" class="input_div début" style="background-color: black ; color: white">
+                        <?php
+                        $connexion = new ConnexionBaseDeDonnees();
+                        $connection = $connexion->getConnection();
+                        $query = "SELECT texte FROM libelle";
+                        $result = mysqli_query($connection, $query);
+                        if(mysqli_num_rows($result) > 0) {
+                            while($row = mysqli_fetch_assoc($result)) {
+                                echo '<option style="color : white" value="' . $row['texte'] . '">' . $row['texte'] . '</option>';
                             }
-                            ?>
-                        </select>
-                    </div>
+                        }
+                        ?>
+                    </select>
                     <div class="radio">
                         <p>Urgence</p>
                         <input type="radio" id="1" name="radio" value="1">
@@ -62,11 +60,14 @@ include '../php/connexion_bd.php';
                         <input type="radio" id="4" name="radio" value="4">
                         <label for="4"> 4</label>
                     </div>
-                    <div class="input_div fin">
-                        <input id="nom_du_con" name="nom_du_con" class="input" type="text" placeholder=" " />
-                        <div class="cut cut_110"></div>
-                        <label for="nom_du_con" class="ph">nom du concerné</label>
-                    </div>
+                    <label for="salle" class="text">Salle</label>
+                    <select name="salle" id="salle" class="input_div fin" style="background-color: black ; color: white">
+                        <option style="color : white" value="G21">Salle G21</option>
+                        <option style="color : white" value="G22">Salle G22</option>
+                        <option style="color : white" value="G23">Salle G23</option>
+                        <option style="color : white" value="G24">Salle G24</option>
+                        <option style="color : white" value="E21">Salle E21</option>
+                    </select>
                     <button type="text" class="confirmation">confirmation</button>
                 </form>
             </div>

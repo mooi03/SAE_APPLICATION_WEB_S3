@@ -5,7 +5,7 @@ $table = "ticket" ;
 $connexionManager = new ConnexionBaseDeDonnees();
 $connexion = $connexionManager->getConnection();
 $login_session = $_SESSION['login'];
-$requete = "SELECT id,login, urgence, demandeur, état,tech, date, ip FROM  $table WHERE état != 'fermer'";
+$requete = "SELECT id,login, urgence, salle, état,tech, date, ip FROM  $table WHERE état != 'fermer'";
 $resultat = mysqli_query($connexion, $requete);
 
 if ($resultat) {
@@ -14,7 +14,7 @@ if ($resultat) {
         <th>numéro du ticket</th>
         <th>créateur du ticket</th>
         <th>niveau d"urgence</th>
-        <th>demandeur</th>
+        <th>salle</th>
         <th>état du ticket</th>
         <th>techenicien en charge</th>
         <th>date de création</th>
@@ -28,7 +28,7 @@ if ($resultat) {
         <td><button class="num_ticket" value="' . $row['id'] . '">' . $row['id'] . '</button></td>
         <td>' . $row['login'] . '</td>
         <td>' . $row['urgence'] . '</td>
-        <td>' . $row['demandeur'] . '</td>
+        <td>' . $row['salle'] . '</td>
         <td>' . $row['état'] . '</td>
         <td>' . $row['tech'] . '</td>
         <td>' . $row['date'] . '</td>

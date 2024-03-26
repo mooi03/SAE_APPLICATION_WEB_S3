@@ -4,7 +4,7 @@ $table = "ticket" ;
 $connexionManager = new ConnexionBaseDeDonnees();
 $connexion = $connexionManager->getConnection();
 $login_session = $_SESSION['login'];
-$requete = "SELECT id, urgence, demandeur, état FROM $table WHERE login = '$login_session'AND état != 'fermer'";
+$requete = "SELECT id, urgence, salle, état FROM $table WHERE login = '$login_session'AND état != 'fermer'";
 $resultat = mysqli_query($connexion, $requete);
 
 if ($resultat) {
@@ -12,7 +12,7 @@ echo '<table>
     <tr>
         <th>numéro du ticket</th>
         <th>niveau d"urgence</th>
-        <th>demandeur</th>
+        <th>salle</th>
         <th>état du ticket</th>
     </tr>';
 
@@ -22,7 +22,7 @@ echo '<table>
     <tr>
         <td><button class="num_ticket" value="' . $row['id'] . '">' . $row['id'] . '</button></td>
         <td>' . $row['urgence'] . '</td>
-        <td>' . $row['demandeur'] . '</td>
+        <td>' . $row['salle'] . '</td>
         <td>' . $row['état'] . '</td>
     </tr>';
     }
