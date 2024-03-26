@@ -9,11 +9,11 @@ session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $libelle = mysqli_real_escape_string($connection, $_POST['libellé']); // Modifié la variable pour éviter les caractères spéciaux
+    $libelle = mysqli_real_escape_string($connection, $_POST['libelle']); // Modifié la variable pour éviter les caractères spéciaux
     $radio = mysqli_real_escape_string($connection, $_POST['radio']);
     $demandeur = mysqli_real_escape_string($connection, $_POST['nom_du_con']);
 
-    $compteur_requete = "SELECT COUNT(*) as total FROM $table"; // Utiliser le nom de la table en variable
+    $compteur_requete = "SELECT max(id) as total FROM $table"; // Utiliser le nom de la table en variable
     $resultat_compteur = mysqli_query($connection, $compteur_requete);
     $ip = $_SERVER['REMOTE_ADDR'] ;
     $date = date('d-m-y h:i:s') ;

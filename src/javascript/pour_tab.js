@@ -11,8 +11,9 @@ function afficherPopup(ticketId) {
     xhr.onreadystatechange = function() {
         if (xhr.readyState == 4 && xhr.status == 200) {
             var libelle = xhr.responseText;
-            document.getElementById('libelle').innerText = libelle;
+            document.getElementById('popup_libelle').innerText = libelle;
             document.getElementById('popup').style.display = 'block';
+            console.log(libelle);
         }
     };
     xhr.open("GET", "../php/get_libelle.php?id=" + ticketId, true);

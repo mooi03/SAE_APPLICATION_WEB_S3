@@ -7,7 +7,7 @@ $table = "ticket";
 $connexionManager = new ConnexionBaseDeDonnees();
 $connection = $connexionManager->getConnection();
 $login_session = $_SESSION['login'];
-$requete = "SELECT id,login, urgence, demandeur, état,tech FROM $table WHERE état !='fermer'";
+$requete = "SELECT id,login, urgence, demandeur, état,tech FROM $table";
 $resultat = mysqli_query($connection, $requete);
 
 if ($resultat) {
@@ -32,7 +32,7 @@ if ($resultat) {
         <td>' . $row['demandeur'] . '</td>
         <td>' . $row['état'] . '</td>
         <td><button class="tech" value="' . $row['id'] . '">' . $row['tech'] . '</button></td>
-        <td><a href="fermeture.php?id=' . $row['id'] . '"><img src="../png/croix.png" style="height: 40px; width: 40px "></a></td>
+        <td><a href="../php/fermeture.php?id=' . $row['id'] . '"><img src="../png/croix.png" style="height: 40px; width: 40px "></a></td>
     </tr>';
     }
 

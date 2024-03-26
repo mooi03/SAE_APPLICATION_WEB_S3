@@ -1,5 +1,4 @@
 <?php
-require 'connexion_bd.php';
 //connexion à la base de données
 $table = "ticket" ;
 $connexionManager = new ConnexionBaseDeDonnees();
@@ -32,7 +31,7 @@ echo '<table>
     echo '
 <div id="popup" style="display: none">
     <div class="déroulant_popup">
-    <p id="libelle"></p>
+    <p id="popup_libelle"></p>
 </div>
     <button onclick="fermerPopup()" class="confirmation_sans_marge" style="background-color: crimson ">Fermer</button>
 </div>

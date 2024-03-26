@@ -529,3 +529,12 @@ tr:nth-child(odd) {
     text-align: center;
     font-size: 30px;
 }
+
+.text_libelle{
+    margin-left: 10%;
+    color: black;
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 40px;
+}
