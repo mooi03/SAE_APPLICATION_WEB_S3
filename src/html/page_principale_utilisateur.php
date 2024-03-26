@@ -34,7 +34,7 @@ include '../php/connexion_bd.php';
         <div class="flex_row">
             <div class="stat stat_48 pour_form">
                 <div class="titre"><p>Nouveau ticket</p></div>
-                <form action="../php/nouveau_ticket.php" class="form" method="post">
+                <form action="../php/nouveau_ticket.php" class="form" method="post" style="margin-top: 30px">
                     <div class="">
                         <label for="libelle" class="text_libelle">libellé</label>
                         <select name="libelle" id="libelle" class="input_div début" style="background-color: black ; color: white">
