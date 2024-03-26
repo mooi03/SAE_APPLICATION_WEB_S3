@@ -51,7 +51,7 @@ function getLibelle(ticketId) {
 }
 function modLibelle(ticketId, libelle) {
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "modification_libelle.php", true);
+    xhr.open("POST", "../php/modification_libelle.php", true);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhr.send("id=" + ticketId + "&libelle=" + libelle);
 }
