@@ -10,7 +10,7 @@ session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $libelle = mysqli_real_escape_string($connection, $_POST['libelle']); // Modifié la variable pour éviter les caractères spéciaux
-    $radio = mysqli_real_escape_string($connection, $_POST['radio']);
+    $radio = isset($_POST['radio']) ? mysqli_real_escape_string($connection, $_POST['radio']) : '1';
     $salle = mysqli_real_escape_string($connection, $_POST['salle']);
 
     $compteur_requete = "SELECT max(id) as total FROM $table"; // Utiliser le nom de la table en variable

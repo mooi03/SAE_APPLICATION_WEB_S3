@@ -12,7 +12,7 @@ if ($resultat) {
     <tr class="tr_haut">
         <th>numéro du ticket</th>
         <th>utilisateur a l"origine</th>
-        <th>niveau d"urgence</th>
+        <th>niveau d\'urgence</th>
         <th>salle</th>
         <th>état du ticket</th>
         <th>techenicien en charge du ticket</th>

@@ -68,7 +68,7 @@ include '../php/connexion_bd.php';
                         <option style="color : white" value="G24">Salle G24</option>
                         <option style="color : white" value="E21">Salle E21</option>
                     </select>
-                    <button type="text" class="confirmation">confirmation</button>
+                    <button type="submit" class="confirmation">confirmation</button>
                 </form>
             </div>
             <div class="stat stat_49 colum">

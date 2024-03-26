@@ -14,7 +14,7 @@ if ($resultat) {
     <tr>
         <th>numéro du ticket</th>
         <th>créateur du ticket</th>
-        <th>niveau d"urgence</th>
+        <th>niveau d\'urgence</th>
         <th>salle</th>
         <th>état du ticket</th>
         <th>techenicien en charge</th>
