@@ -1,5 +1,5 @@
 body{
-    background-color: #ffa15f;
+    background-color: #813e3f;
 }
 .grand_parent{
     height: 140vh;
@@ -14,7 +14,7 @@ body{
     position:sticky;
     top: 0;
     width: 14%;
-    background-color: #ffa15f;
+    background-color: #813e3f;
     display: flex;
     flex-direction:column;
     gap: 70px;
@@ -63,7 +63,7 @@ body{
     width: 100%;
 }
 .haut{
-    background-color: #ffa15f;
+    background-color: #813e3f;
     flex: 0 1 4%;
     display: flex;
     flex-direction: row-reverse;
@@ -71,11 +71,11 @@ body{
     gap: 45px;
 }
 #deco{
-    background-color: #6dfaaa;
+    background-color: #419aff;
     border-radius: 15px 15px 15px 15px;
 }
 #co{
-    background-color: #6dfaaa;
+    background-color: #419aff;
     border-radius: 15px 15px 15px 15px;
 }
 .logo{
@@ -135,7 +135,7 @@ body{
     margin-top: 4px;
     margin-bottom: 4px;
     border-radius: 30px 30px 30px 30px;
-    background-color: #f5b8fc;
+    background-color: #f2c286;
 }
 .stat_100{
     flex: 0 0 98%;
@@ -167,7 +167,7 @@ body{
     margin-bottom: 3px;
     border-radius: 30px 30px 30px 30px;
     flex: 0 0 49%;
-    background-color: #f5b8fc;
+    background-color: #f2c286;
 }
 .colum{
     display: flex;
@@ -175,7 +175,7 @@ body{
 }
 .pour_form{
     align-items: center;
-    background-color: #f5b8fc;
+    background-color: #f2c286;
     border: solid black 3px;
     display: flex;
     justify-content: center;
@@ -189,7 +189,7 @@ body{
     margin: 20px 5px;
 }
 .form{
-    background-color: #f5b8fc;
+    background-color: #f2c286;
     height: 84%;
     width: 96%;
     border-radius: 30px 30px 30px 30px;
@@ -199,7 +199,7 @@ body{
     width: 100%;
     height: 16%;
     border-bottom: solid black 3px;
-    background-color: #be4bdb;
+    background-color: #af5c58;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -270,7 +270,7 @@ body{
     top: 20px;
 }
 .cut {
-    background-color: #f5b8fc;
+    background-color: #f2c286;
     border-radius: 10px;
     height: 20px;
     left: 20px;
@@ -305,7 +305,7 @@ body{
     color: black;
 }
 .confirmation {
-    background-color: #6dfaaa;
+    background-color: #af5c58;
     border-radius: 12px;
     border: 0;
     box-sizing: border-box;
@@ -320,7 +320,7 @@ body{
     margin-left: 65%;
 }
 .confirmation_sans_marge {
-    background-color: #6dfaaa;
+    background-color: #af5c58;
     border-radius: 6px;
     border: 0;
     box-sizing: border-box;
@@ -337,10 +337,10 @@ body{
     width: 25%;
 }
 .confirmation:active {
-    background-color: #489b71;
+    background-color: #af5c58;
 }
 #deco.lien_bouton:active {
-    background-color: #489b71;
+    background-color: #af5c58;
 }
 #bouton_haut{
 
@@ -348,7 +348,7 @@ body{
 
 .num_ticket{
     padding: 10px 20px;
-    background-color: #4CAF50; /* Couleur de fond */
+    background-color: #419aff; /* Couleur de fond */
     color: white; /* Couleur du texte */
     border: none; /* Supprime la bordure */
     text-align: center;
@@ -361,7 +361,7 @@ body{
 }
 .num_ticket_S{
     padding: 10px 20px;
-    background-color: #4CAF50; /* Couleur de fond */
+    background-color: #419aff; /* Couleur de fond */
     color: white; /* Couleur du texte */
     border: none; /* Supprime la bordure */
     text-align: center;
@@ -379,7 +379,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #f5b8fc;
+    background-color: #f2c286;
     border: solid black 3px;
     border-radius: 30px 30px 30px 30px;
     height: 235px;
@@ -409,7 +409,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #f5b8fc;
+    background-color: #f2c286;
     border: solid black 3px;
     border-radius: 30px 30px 30px 30px;
     height: 175px;
@@ -422,7 +422,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #f5b8fc;
+    background-color: #f2c286;
     border: solid black 3px;
     border-radius: 30px 30px 30px 30px;
     height: 150px;
@@ -474,7 +474,7 @@ tr:nth-child(odd) {
 }
 .urgence{
     padding: 10px 20px;
-    background-color: #4CAF50; /* Couleur de fond */
+    background-color: #419aff; /* Couleur de fond */
     color: white; /* Couleur du texte */
     border: none; /* Supprime la bordure */
     text-align: center;
@@ -487,7 +487,7 @@ tr:nth-child(odd) {
 }
 .urgence_S{
     padding: 10px 20px;
-    background-color: #4CAF50; /* Couleur de fond */
+    background-color: #419aff; /* Couleur de fond */
     color: white; /* Couleur du texte */
     border: none; /* Supprime la bordure */
     text-align: center;
@@ -500,7 +500,7 @@ tr:nth-child(odd) {
 }
 .tech{
     padding: 10px 20px;
-    background-color: #4CAF50; /* Couleur de fond */
+    background-color: #419aff; /* Couleur de fond */
     color: white; /* Couleur du texte */
     border: none; /* Supprime la bordure */
     text-align: center;
@@ -513,7 +513,7 @@ tr:nth-child(odd) {
 }
 .tech_S{
     padding: 10px 20px;
-    background-color: #4CAF50; /* Couleur de fond */
+    background-color: #419aff; /* Couleur de fond */
     color: white; /* Couleur du texte */
     border: none; /* Supprime la bordure */
     text-align: center;
