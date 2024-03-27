@@ -28,7 +28,7 @@ if ($resultat) {
         <td>' . $row['login'] . '</td>
         <td>' . $row['urgence'] . '</td>
         <td>' . $row['salle'] . '</td>
-        <td>' . $row['état'] . '</td>
+        <td>' . $row['etat'] . '</td>
         <td>' . $row['ip'] . '</td>
         <td><a href="../php/fermeture.php?id=' . $row['id'] . '"><img src="../png/croix.png" style="height: 40px; width: 40px "></a></td>
     </tr>';

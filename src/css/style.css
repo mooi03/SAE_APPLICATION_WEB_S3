@@ -462,15 +462,15 @@ th, td {
 }
 
 th {
-    background-color: #54a223;
+    background-color: #419aff;
 }
 
 tr:nth-child(even) {
-    background-color: #6fd02e;
+    background-color: #419aff;
 }
 
 tr:nth-child(odd) {
-    background-color: #54a223;
+    background-color: #419aff;
 }
 .urgence{
     padding: 10px 20px;
