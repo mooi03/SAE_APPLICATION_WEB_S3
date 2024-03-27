@@ -1,7 +1,7 @@
 <?php
 require_once 'export_csv_bd.php';
 export_csv('ticket');
-$csv_directory = 'SAE_APPLICATION_WEB_S3-main/src/csv/ticket/';
+$csv_directory = '../ticket/';
 $csv_files = glob($csv_directory . '*.csv');
 
 echo "<table border='1'>";

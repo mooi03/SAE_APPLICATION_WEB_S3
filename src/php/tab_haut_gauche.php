@@ -2,7 +2,7 @@
 require_once 'export_csv_bd.php';
 export_csv('erreur_co');
 // Répertoire contenant les fichiers CSV
-$csv_directory = 'SAE_APPLICATION_WEB_S3-main/src/csv/erreur_co/';
+$csv_directory = '../csv/erreur_co/';
 
 // Récupération de la liste des fichiers CSV
 $csv_files = glob($csv_directory . '*.csv');

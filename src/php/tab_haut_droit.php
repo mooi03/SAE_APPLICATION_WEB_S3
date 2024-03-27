@@ -2,7 +2,7 @@
 require_once 'export_csv_bd.php';
 $table = 'utilisateur';
 export_csv($table);
-$csv_directory = "SAE_APPLICATION_WEB_S3-main/src/csv/$table/";
+$csv_directory = "../csv/$table/";
 $csv_files = glob($csv_directory . '*.csv');
 echo "<table border='1'>";
 echo "<tr>";

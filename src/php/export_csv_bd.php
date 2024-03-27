@@ -8,7 +8,7 @@ function export_csv($table){
         die("La connexion à la base de données a échoué");
     }
 
-    $csv_base_directory = 'SAE_APPLICATION_WEB_S3-main/src/csv/';
+    $csv_base_directory = '../csv/';
     $table_directory = $table;
     $csv_directory = $csv_base_directory . $table_directory . '/';
 
