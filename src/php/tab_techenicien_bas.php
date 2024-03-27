@@ -27,7 +27,7 @@ if ($resultat) {
         <td>' . $row['login'] . '</td>
         <td>' . $row['urgence'] . '</td>
         <td>' . $row['salle'] . '</td>
-        <td>' . $row['état'] . '</td>
+        <td>' . $row['etat'] . '</td>
         <td>' . $row['tech'] . '</td>
         <td><a href="../php/prise.php?id=' . $row['id'] . '"><img src="../png/plus.png" style="height: 40px; width: 40px "></a></td>
     </tr>';
