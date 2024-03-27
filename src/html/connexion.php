@@ -22,7 +22,7 @@
 <div class="petit_grand_parent">
   <div class="gauche">
     <div class="parent_bouton">
-      <a href="index.php" class="lien_bouton"> <img src="../png/logo.PNG" class="img_bouton"> <p>Menu</p></a>
+      <a href="../index.php" class="lien_bouton"> <img src="../png/logo.PNG" class="img_bouton"> <p>Menu</p></a>
       <a href="register.php" class="lien_bouton"><img src="../png/logo.PNG" class="img_bouton"> <p>Nouveau utilisateur</p></a>
     </div>
   </div>
