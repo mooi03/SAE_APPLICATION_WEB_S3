@@ -36,12 +36,12 @@
           <label for="login" class="ph">Nom utilisateur</label>
         </div>
         <div class="input_div fin_mdp">
-          <input id="mdp" name="mdp" class="input" type="text" placeholder=" " />
+          <input id="mdp" name="mdp" class="input" type="password" placeholder=" " />
           <div class="cut cut_140"></div>
           <label for="mdp" class="ph">mot de passe</label>
         </div>
         <div class="input_div fin_mdp">
-          <input id="conf" name="conf" class="input" type="text" placeholder=" " />
+          <input id="conf" name="conf" class="input" type="password" placeholder=" " />
           <div class="cut cut_230"></div>
           <label for="conf" class="ph">confirmation du nouveau mot de passe</label>
         </div>

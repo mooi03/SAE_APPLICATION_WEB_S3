@@ -29,20 +29,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $update_mdp_query = "UPDATE utilisateur SET mdp='" . bin2hex($new_mdp_rc4) . "' WHERE login='$login'";
 
             if (mysqli_query($connection, $update_mdp_query)) {
-                header('Location: ../html/changement_mdp.php');
+                $_SESSION['success_message'] = "Mot de passe changé avec succès.";
             } else {
-                header('Location: ../html/changement_mdp.php');
+                $_SESSION['error_message'] = "Erreur lors de la mise à jour du mot de passe.";
             }
         } else {
-            header('Location: ../html/changement_mdp.php');
+            $_SESSION['error_message'] = "Les nouveaux mots de passe ne correspondent pas.";
         }
     } else {
-        header('Location: ../html/changement_mdp.php');
+        $_SESSION['error_message'] = "Ancien mot de passe incorrect.";
     }
 }
-
-
-
-
-
+header('Location: ../html/changement_mdp.php');
 ?>

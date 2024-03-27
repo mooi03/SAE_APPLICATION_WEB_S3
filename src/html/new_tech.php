@@ -1,5 +1,11 @@
 <?php
-include '../php/restriction_2.php'
+include '../php/restriction_2.php';
+
+$error_message = isset($_SESSION['error_message']) ? $_SESSION['error_message'] : "";
+$success_message = isset($_SESSION['success_message']) ? $_SESSION['success_message'] : "";
+
+unset($_SESSION['error_message']);
+unset($_SESSION['success_message']);
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -39,12 +45,12 @@ include '../php/restriction_2.php'
           <label for="login" class="ph">Nom tech</label>
         </div>
         <div class="input_div fin_mdp">
-          <input id="mdp" name="mdp" class="input" type="text" placeholder=" " />
+          <input id="mdp" name="mdp" class="input" type="password" placeholder=" " />
           <div class="cut cut_140"></div>
           <label for="mdp" class="ph">mot de passe</label>
         </div>
         <div class="input_div fin_mdp">
-          <input id="conf" name="conf" class="input" type="text" placeholder=" " />
+          <input id="conf" name="conf" class="input" type="password" placeholder=" " />
           <div class="cut cut_230"></div>
           <label for="conf" class="ph">confirmation du nouveau mot de passe</label>
         </div>
@@ -53,5 +59,16 @@ include '../php/restriction_2.php'
     </div>
   </div>
 </div>
+<?php if (!empty($error_message)) : ?>
+    <script>
+        alert("<?php echo $error_message; ?>");
+    </script>
+<?php endif; ?>
+
+<?php if (!empty($success_message)) : ?>
+    <script>
+        alert("<?php echo $success_message; ?>");
+    </script>
+<?php endif; ?>
 </body>
 </html>

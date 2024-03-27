@@ -36,7 +36,7 @@
           <label for="login" class="ph">login</label>
         </div>
         <div class="input_div fin_mdp">
-          <input id="mdp" name="mdp" class="input" type="text" placeholder=" " />
+          <input id="mdp" name="mdp" class="input" type="password" placeholder=" " />
           <div class="cut cut_140"></div>
           <label for="mdp" class="ph">mot de passe</label>
         </div>
