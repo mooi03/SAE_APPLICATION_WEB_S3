@@ -1,37 +1,37 @@
 <?php
-require 'connexion_bd.php';
-//connexion à la base de données
-$table = "erreur_co" ;
-$connexionManager = new ConnexionBaseDeDonnees();
-$connection = $connexionManager->getConnection();
-$login_session = $_SESSION['login'];
-$requete = "SELECT mdp,login,date,ip FROM $table";
-$resultat = mysqli_query($connection, $requete);
+require_once 'export_csv_bd.php';
+export_csv('ticket');
+$csv_directory = 'SAE_APPLICATION_WEB_S3-main/src/csv/ticket/';
+$csv_files = glob($csv_directory . '*.csv');
 
-if ($resultat) {
-    echo '<table>
-    <tr>
-        <th>login</th>
-        <th>mdp</th>
-        <th>date de la connection</th>
-        <th>adresse ip</th>
-    </tr>';
+echo "<table border='1'>";
+echo "<tr>";
+echo "<th>Nom du fichier</th>";
+echo "<th>Date</th>";
+echo "</tr>";
 
 
-    while ($row = mysqli_fetch_assoc($resultat)) {
-        echo '
-    <tr>
-        <td>' . $row['login'] . '</td>
-        <td>' . $row['mdp'] . '</td>
-        <td>' . $row['date'] . '</td>
-        <td>' . $row['ip'] . '</td>
-    </tr>';
-    }
-
-    echo '</table>';
+foreach ($csv_files as $csv_file) {
+    $file_name = basename($csv_file);
+    // Extraction des informations sur la table et la date du nom du fichier
+    preg_match('/export_(.*?)_(\d{4}-\d{2}-\d{2})\.csv/', $file_name, $matches);
+    $table_associée = $matches[1];
+    $date_associée = $matches[2];
 
 
-    mysqli_free_result($resultat);
+    echo "<tr>";
+    echo "<td><a href='$csv_file' download>$file_name</a></td>";
+    echo "<td>$date_associée</td>";
+    echo "</tr>";
 }
-mysqli_close($connection);
+echo "</table>";
+echo '
+    <div id="popup" style="display: none">
+        <div class="déroulant_popup">
+        <p id="libelle"></p>
+    </div>
+        <button onclick="fermerPopup()" class="confirmation_sans_marge" style="background-color: crimson ">Fermer</button>
+    </div>
+    <script type="text/javascript" src="../javascript/pour_tab.js"></script>';
+
 ?>

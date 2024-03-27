@@ -1,53 +1,41 @@
 <?php
-require 'connexion_bd.php';
-//connexion à la base de données
-$table = "ticket" ;
-$connexionManager = new ConnexionBaseDeDonnees();
-$connexion = $connexionManager->getConnection();
-$login_session = $_SESSION['login'];
-$requete = "SELECT id,login, urgence, salle, état,tech, date, ip FROM  $table WHERE état != 'fermer'";
-$resultat = mysqli_query($connexion, $requete);
+require_once 'export_csv_bd.php';
+export_csv('erreur_co');
+// Répertoire contenant les fichiers CSV
+$csv_directory = 'SAE_APPLICATION_WEB_S3-main/src/csv/erreur_co/';
 
-if ($resultat) {
-    echo '<table>
-    <tr>
-        <th>numéro du ticket</th>
-        <th>créateur du ticket</th>
-        <th>niveau d\'urgence</th>
-        <th>salle</th>
-        <th>état du ticket</th>
-        <th>techenicien en charge</th>
-        <th>date de création</th>
-        <th>adresse ip</th>
-    </tr>';
+// Récupération de la liste des fichiers CSV
+$csv_files = glob($csv_directory . '*.csv');
+// Affichage de l'entête de la table
+echo "<table border='1'>";
+echo "<tr>";
+echo "<th>Nom du fichier</th>";
+echo "<th>Date</th>";
+echo "</tr>";
 
 
-    while ($row = mysqli_fetch_assoc($resultat)) {
-        echo '
-    <tr>
-        <td><button class="num_ticket" value="' . $row['id'] . '">' . $row['id'] . '</button></td>
-        <td>' . $row['login'] . '</td>
-        <td>' . $row['urgence'] . '</td>
-        <td>' . $row['salle'] . '</td>
-        <td>' . $row['état'] . '</td>
-        <td>' . $row['tech'] . '</td>
-        <td>' . $row['date'] . '</td>
-        <td>' . $row['ip'] . '</td>
-    </tr>';
-    }
+foreach ($csv_files as $csv_file) {
+    $nom_fichier = basename($csv_file);
 
-    echo '</table>';
-    echo '
-<div id="popup" style="display: none">
-    <div class="déroulant_popup">
-    <p id="libelle"></p>
-</div>
-    <button onclick="fermerPopup()" class="confirmation_sans_marge" style="background-color: crimson ">Fermer</button>
-</div>
-<script type="text/javascript" src="../javascript/pour_tab.js"></script>';
+    // Extraction des informations sur la table et la date du nom du fichier
+    preg_match('/export_(.*?)_(\d{4}-\d{2}-\d{2})\.csv/', $nom_fichier, $matches);
+    $table_associée = $matches[1];
+    $date_associée = $matches[2];
 
 
-    mysqli_free_result($resultat);
+    echo "<tr>";
+    echo "<td><a href='$csv_file' download>$nom_fichier</a></td>";
+    echo "<td>$date_associée</td>";
+    echo "</tr>";
 }
-mysqli_close($connexion);
+echo "</table>";
+echo '
+    <div id="popup" style="display: none">
+        <div class="déroulant_popup">
+        <p id="libelle"></p>
+    </div>
+        <button onclick="fermerPopup()" class="confirmation_sans_marge" style="background-color: crimson ">Fermer</button>
+    </div>
+    <script type="text/javascript" src="../javascript/pour_tab.js"></script>';
+
 ?>

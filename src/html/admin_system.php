@@ -36,8 +36,12 @@ include '../php/restriction_2.php'
             </div>
         </div>
         <div class="flex_row_19">
-            <div class="stat stat_32 centre" >
-                <?php include '../php/tab_admin_stat_1.php' ?>
+            <div class="stat stat_32 pour_form" >
+                    <div class="titre" ><p>Nouveau libelle</p></div>
+                    <form action="../php/nouveau_libelle.php" class="form" method="post" style="margin-top: 30px" >
+                            <input id="libelle" name="libelle" class="input" type="text" placeholder=" " />
+                        <button type="submit" class="confirmation" style="margin-top: 20px">confirmation</button>
+                    </form>
             </div>
             <div class="stat stat_32 centre">
                 <?php include '../php/tab_admin_stat_2.php' ?>

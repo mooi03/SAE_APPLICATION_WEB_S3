@@ -11,7 +11,7 @@ $requete = "SELECT id,login, urgence, salle, état,tech FROM $table";
 $resultat = mysqli_query($connection, $requete);
 
 if ($resultat) {
-    echo '<table>
+    echo '<table style="">
     <tr>
         <th>numéro du ticket</th>
         <th>créateur du ticket</th>

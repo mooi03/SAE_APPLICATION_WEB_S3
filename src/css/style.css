@@ -119,7 +119,7 @@ body{
     margin-top: 4px;
     margin-bottom: 4px;
     display: flex;
-    flex: 0 0 79%;
+    flex: 0 0 69%;
 }
 .flex_row_19{
     margin-left: 8px;
@@ -127,7 +127,7 @@ body{
     margin-top: 4px;
     margin-bottom: 4px;
     display: flex;
-    flex: 0 0 19%;
+    flex: 0 0 20%;
 }
 .stat{
     margin-left: 8px;
@@ -236,7 +236,7 @@ body{
     box-sizing: border-box;
     color: #eee;
     font-size: 18px;
-    height: 100%;
+    height: 50px;
     outline: 0;
     padding: 4px 20px 0;
     width: 100%;
@@ -537,4 +537,8 @@ tr:nth-child(odd) {
     font-size: 25px;
     font-weight: 600;
     margin-top: 0px;
+}
+.barre_noir{
+    background-color: black;
+    color: white;
 }
