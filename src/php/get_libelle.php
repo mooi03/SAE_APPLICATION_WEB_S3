@@ -7,12 +7,12 @@ $connection = $connexionManager->getConnection();
 
 $ticketId = $_GET['id'];
 
-$requete = "SELECT libellé FROM $table WHERE id = $ticketId";
+$requete = "SELECT libelle FROM $table WHERE id = $ticketId";
 $resultat = mysqli_query($connection, $requete);
 
 if ($resultat) {
     $row = mysqli_fetch_assoc($resultat);
-    echo $row['libellé'];
+    echo $row['libelle'];
 } else {
     echo "Erreur lors de la récupération du libellé : " . mysqli_error($connection);
 }

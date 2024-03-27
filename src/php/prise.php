@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     $ticketId = $_GET['id'];
 
     // Correction de la requête SQL
-    $updateQuery = "UPDATE $table SET état = 'en cours de traitement', tech = ? WHERE id = ?";
+    $updateQuery = "UPDATE $table SET etat = 'en cours de traitement', tech = ? WHERE id = ?";
     $stmt = mysqli_prepare($connection, $updateQuery);
 
     if ($stmt) {

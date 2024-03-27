@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $ticketId = $_POST['id'];
     $libelle = $_POST['libelle'];
 
-    $updateQuery = "UPDATE $table SET libellé = '$libelle' WHERE id = $ticketId";
+    $updateQuery = "UPDATE $table SET libelle = '$libelle' WHERE id = $ticketId";
     mysqli_query($connection, $updateQuery);
 }
 

@@ -8,7 +8,7 @@ $connection = $connexionManager->getConnection();
 
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
     $ticketId = $_GET['id'];
-    $updateQuery = "UPDATE $table SET état = 'fermer' WHERE id = ?";
+    $updateQuery = "UPDATE $table SET etat = 'fermer' WHERE id = ?";
     $stmt = mysqli_prepare($connection, $updateQuery);
 
     if ($stmt) {

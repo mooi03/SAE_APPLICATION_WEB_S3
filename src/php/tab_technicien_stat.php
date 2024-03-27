@@ -6,7 +6,7 @@ $connexionManager = new ConnexionBaseDeDonnees();
 $connexion = $connexionManager->getConnection();
 $tech = $_SESSION['login'];
 
-$sql = "SELECT COUNT(*) AS total_tickets FROM ticket WHERE tech = $tech AND état != 'fermer'";
+$sql = "SELECT COUNT(*) AS total_tickets FROM ticket WHERE tech = $tech AND etat != 'fermer'";
 $result = mysqli_query($connexion, $sql) or die("Erreur de requête");
 
 if ($result) {

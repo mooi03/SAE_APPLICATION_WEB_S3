@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $login = $_SESSION['login'];
 
-        $insert = "INSERT INTO $table (id, login, libellé, urgence, salle,ip,date) VALUES ('$nb', '$login', '$libelle', '$radio', '$salle','$ip','$date')";
+        $insert = "INSERT INTO $table (id, login, libelle, urgence, salle,ip,date) VALUES ('$nb', '$login', '$libelle', '$radio', '$salle','$ip','$date')";
 
         if (mysqli_query($connection, $insert)) {
             echo "Inscription réussie !";

@@ -4,7 +4,7 @@ $table = "ticket" ;
 $connexionManager = new ConnexionBaseDeDonnees();
 $connexion = $connexionManager->getConnection();
 $login_session = $_SESSION['login'];
-$requete = "SELECT id, urgence, salle, état FROM $table WHERE login = '$login_session'";
+$requete = "SELECT id, urgence, salle, etat FROM $table WHERE login = '$login_session'";
 $resultat = mysqli_query($connexion, $requete);
 
 if ($resultat) {
@@ -24,7 +24,7 @@ echo '<table>
         <td><button class="num_ticket" value="' . $row['id'] . '">' . $row['id'] . '</button></td>
         <td>' . $row['urgence'] . '</td>
         <td>' . $row['salle'] . '</td>
-        <td>' . $row['état'] . '</td>
+        <td>' . $row['etat'] . '</td>
         <td><a href="../php/supprimer.php?id=' . $row['id'] . '"><img src="../png/croix.png" style="height: 40px; width: 40px "></a></td>
     </tr>';
     }

@@ -4,7 +4,7 @@ require 'connexion_bd.php';
 $table = "ticket" ;
 $connexionManager = new ConnexionBaseDeDonnees();
 $connexion = $connexionManager->getConnection();
-$requete = "SELECT id, login, urgence, salle, état, tech FROM $table WHERE état != 'fermer' ORDER BY id DESC LIMIT 10";
+$requete = "SELECT id, login, urgence, salle, etat, tech FROM $table WHERE etat != 'fermer' ORDER BY id DESC LIMIT 10";
 $resultat = mysqli_query($connexion, $requete);
 
 if ($resultat) {
@@ -26,7 +26,7 @@ if ($resultat) {
         <td>' . $row['login'] . '</td>
         <td>' . $row['urgence'] . '</td>
         <td>' . $row['salle'] . '</td>
-        <td>' . $row['état'] . '</td>
+        <td>' . $row['etat'] . '</td>
         <td>' . $row['tech'] . '</td>
     </tr>';
     }

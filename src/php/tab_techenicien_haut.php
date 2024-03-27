@@ -5,7 +5,7 @@ $table = "ticket" ;
 $connexionManager = new ConnexionBaseDeDonnees();
 $connection = $connexionManager->getConnection();
 $login_session = $_SESSION['login'];
-$requete = "SELECT id,login, urgence, salle, état, tech, ip FROM  $table WHERE état != 'fermer' AND tech = '$login_session'";
+$requete = "SELECT id,login, urgence, salle, etat, tech, ip FROM  $table WHERE etat != 'fermer' AND tech = '$login_session'";
 $resultat = mysqli_query($connection, $requete);
 
 if ($resultat) {
